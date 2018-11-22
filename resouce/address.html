@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>收货地址</title>
+
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	 <link rel="stylesheet" href="css/mui.min.css">
+    <link href="./css/style.css"  rel="stylesheet">
+
+</head>
+
+
+<body class="address">
+
+<ul id="OA_task_1" class="mui-table-view">
+					<li class="mui-table-view-cell">
+							<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-grey mui-btn-grey1"><span><img src="images/change.png" alt="">修改</span></a>
+						<a class="mui-btn mui-btn-grey mui-btn-grey2"><span><img src="images/del.png" alt="">删除</span></a>
+							</div>
+							<div class="mui-slider-handle">
+									<div class="wrap">
+										<div class="top">
+											<div class="left">
+												<span>吕蒙</span>
+												<span class="mr">默认地址</span>
+											</div>
+											<div class="right">
+												<span>1866666666</span>
+											</div>
+										</div>
+										<div class="botm">
+											<p>浙江省/杭州市/江干区白杨街道科技园10号 杭州服务外包大楼</p>
+										</div>
+									</div>
+
+							</div>
+						</li>
+
+						<li class="mui-table-view-cell">
+							<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-grey mui-btn-grey1"><span><img src="images/change.png" alt="">修改</span></a>
+						<a class="mui-btn mui-btn-grey mui-btn-grey2"><span><img src="images/del.png" alt="">删除</span></a>
+							</div>
+							<div class="mui-slider-handle">
+									<div class="wrap">
+										<div class="top">
+											<div class="left">
+												<span>吕蒙</span>
+												<span class="mr">默认地址</span>
+											</div>
+											<div class="right">
+												<span>1866666666</span>
+											</div>
+										</div>
+										<div class="botm">
+											<p>浙江省/杭州市/江干区白杨街道科技园10号 杭州服务外包大楼</p>
+										</div>
+									</div>
+
+							</div>
+						</li>
+					
+<!-- 底部 -->
+	<div class="add-address">
+		<a href="add_address.html"><img src="images/add_address.png" alt=""><span>添加新地址</span></a>
+	</div>
+
+
+
+
+<script src="js/mui.min.js"></script>
+ <script>
+mui.init();
+	(function($) {
+	$('#OA_task_1').on('tap', '.mui-btn-grey2', function(event) {		//滑动删除
+					var elem = this;
+					var li = elem.parentNode.parentNode;
+					li.parentNode.removeChild(li);
+					setTimeout(function() {
+					$.swipeoutClose(li);
+					}, 0);
+					});
+
+	$('#OA_task_1').on('tap', '.mui-btn-grey1', function(event) {	//滑动修改功能
+					var elem = this;
+					var li = elem.parentNode.parentNode;
+					window.location.href="add_address.html"; 
+					setTimeout(function() {
+					$.swipeoutClose(li);
+					}, 0);
+						
+					
+				});
+				})
+	(mui);
+</script>
+</body>
+</html>

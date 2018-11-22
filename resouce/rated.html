@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发表评价</title>
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <link href="./css/style.css"  rel="stylesheet">
+	
+	<script src="./js/jquery.js"></script>
+</head>
+<body class="rated">
+	<div class="wrap">
+		<div class="in">
+			<img src="images/1.jpg" alt="">
+			<textarea name="" id="" placeholder="亲，请在这里输入评价~"></textarea>
+		</div>
+	</div>
+
+<div class="main">
+
+		<div class="main-wrap">
+			<span class="revtit">描述相符:</span>
+			<div id="mydiv1" currentIndex="0" class="mydiv">
+    			<ul class="star_ul">
+			        <li num="1"><img src="images/star_empty.png" class="xing_hui"/></li>
+			        <li num="2"><img src="images/star_empty.png"  class="xing_hui"/></li>
+			        <li num="3"><img src="images/star_empty.png"  class="xing_hui"/></li>
+			        <li num="4"><img src="images/star_empty.png"  class="xing_hui"/></li>
+			        <li num="5"><img src="images/star_empty.png"  class="xing_hui"/></li>
+		   		</ul>
+			</div>
+		</div>
+		
+		<div class="main-wrap">
+			<span class="revtit">发货速度:</span>
+			<div id="mydiv2" currentIndex="0" class="mydiv">
+    			<ul class="star_ul">
+			        <li num="1"><img src="images/star_empty.png" class="xing_hui"/></li>
+			        <li num="2"><img src="images/star_empty.png"  class="xing_hui"/></li>
+			        <li num="3"><img src="images/star_empty.png"  class="xing_hui"/></li>
+			        <li num="4"><img src="images/star_empty.png"  class="xing_hui"/></li>
+			        <li num="5"><img src="images/star_empty.png"  class="xing_hui"/></li>
+		   		</ul>
+			</div>
+		</div>
+	
+		<div class="main-wrap">
+			<span class="revtit">服务态度:</span>
+			<div id="mydiv3" currentIndex="0" class="mydiv">
+    			<ul class="star_ul">
+			        <li num="1"><img src="images/star_empty.png" class="xing_hui"/></li>
+			        <li num="2"><img src="images/star_empty.png"  class="xing_hui"/></li>
+			        <li num="3"><img src="images/star_empty.png"  class="xing_hui"/></li>
+			        <li num="4"><img src="images/star_empty.png"  class="xing_hui"/></li>
+			        <li num="5"><img src="images/star_empty.png"  class="xing_hui"/></li>
+		   		</ul>
+			</div>
+		</div>
+	
+</div>
+
+<div class="btn">
+  
+		<div class="left" id="rated-left">
+			<img src="images/check0.png" alt="">
+			<label for="">匿名评价</label>
+			 <input type="radio"  name="rated" style="display:none">
+		</div>
+		<div class="right">
+			<a href=""><span>发表评价</span></a>
+		</div>
+ 
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+//匿名评价
+ $('#rated-left').click(function(){
+ 	if ($("input:radio[name='rated']").attr("checked")) 
+ 	{
+ 	$("input:radio[name='rated']").attr('checked',false);
+ 	$('#rated-left img').attr('src','images/check0.png')
+ 	}
+ 	else{
+ 	$("input:radio[name='rated']").attr('checked',true);
+ 	$('#rated-left img').attr('src','images/check.png')
+ 	}
+ })
+
+        var isclick = false;
+        function change(mydivid,num) {
+            if (!isclick) {
+                var tds = $("#"+mydivid+" ul li");
+                for (var i = 0; i < num; i++) {
+                    var td = tds[i];
+                    $(td).find("img").attr("src","images\/star_full.png");
+                }
+                var tindex = $("#"+mydivid).attr("currentIndex");
+                tindex = tindex==0?0:tindex+1;
+                for (var j = num; j < tindex; j++) {
+                    var td = tds[j];
+                    $(td).find("img").attr("src","images\/star_empty.png");
+                }
+                $("#"+mydivid).attr("currentIndex",num);
+            }
+        }
+        function repeal(mydivid,num) {
+            if (!isclick) {
+                var tds = $("#"+mydivid+" ul li");
+                var tindex = $("#"+mydivid).attr("currentIndex");
+                tindex = tindex==0?0:tindex+1;
+                for (var i = tindex; i < num; i++) {
+                    var td = tds[i];
+                    $(td).find("img").attr("src","images\/star_empty.png");
+                }
+                $("#"+mydivid).attr("currentIndex",num);
+            }
+        }
+        function change1(mydivid,num) {
+            if (!isclick) {
+                change(mydivid,num);
+
+            }
+            else {
+                alert("Sorry,You had clicked me!");
+            }
+        }
+        $(function(){
+            initEvent('mydiv1');
+            initEvent('mydiv2');
+            initEvent('mydiv3');
+        });
+        function initEvent(mydivid) {
+            //var tableWjx =$("#tableWjx ul li");
+            // var items= tableWjx.getElementsByTagName("ul");
+
+            var tds = $("#"+mydivid+" ul li");
+            for (var i = 0; i < tds.length; i++) {
+                var td = tds[i];
+                $(td).live('mouseover',function(){var num = $(this).attr("num");change(mydivid,num);});
+                //$(td).live('mouseout',function(){var num = $(this).attr("num");repeal(mydivid,num);});
+                $(td).live('click',function(){var num = $(this).attr("num");change1(mydivid,num);});
+            }
+        }
+    </script>
+</body>
+</html>

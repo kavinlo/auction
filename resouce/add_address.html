@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加地址</title>
+
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	
+    
+     <link href="./css/mui.min.css"  rel="stylesheet">
+     <link href="./css/style.css"  rel="stylesheet">
+	
+	<script src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/mui.min.js"></script>
+</head>
+<body class="add_address">
+
+	<ul class="wrap1">
+		<li>
+			<input type="text" placeholder="收货人姓名">
+		</li>
+		<li class="mui-input-row">
+			<label>+086</label>
+			<input type="tel" placeholder="联系电话" id='tel'>
+		</li>
+		<li>
+			<input type="text" placeholder="省/市/区">
+		</li>
+		<li>
+			<input type="text" placeholder="小区、街道、门牌等详细信息">
+		</li>
+		<li class="mui-table-view-cell">
+			设为默认地址<br/>
+			注:每次下单时会默认使用该地址
+			<div class="mui-switch mui-switch-blue mui-switch-mini mui-active">
+				<div class="mui-switch-handle"></div>
+			</div>
+		</li>
+	</ul>
+	<div class="wrap2">
+		<a href="address.html"><input type="button" value='确定'></a>
+	</div>
+
+
+
+<script>
+$('#tel').blur(checkPhone);
+function checkPhone(){ 
+	var phone = document.getElementById('tel').value; 
+	if(!(/^1[3|4|5|7|8]\d{9}$/.test(phone)))
+		{ 
+			alert("手机号码有误，请重填");
+			 return false; 
+}};
+</script>
+</body>
+</html>

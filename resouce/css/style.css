@@ -1,0 +1,1722 @@
+@charset "utf-8";
+/*                       叫一声佛祖，回头无岸。
+ *                             _ooOoo_
+ *                            o8888888o
+ *                            88" . "88
+ *                            (| -_- |)
+ *                            O\  =  /O
+ *                         ____/`---'\____
+ *                       .'  \\|     |//  `.
+ *                      /  \\|||  :  |||//  \
+ *                     /  _||||| -:- |||||-  \
+ *                     |   | \\\  -  /// |   |
+ *                     | \_|  ''\---/''  |   |
+ *                     \  .-\__  `-`  ___/-. /
+ *                   ___`. .'  /--.--\  `. . __
+ *                ."" '<  `.___\_<|>_/___.'  >'"".
+ *               | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+ *               \  \ `-.   \_ __\ /__ _/   .-` /  /
+ *          ======`-.____`-.___\_____/___.-`____.-'======
+ *                             `=---='
+ *          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* CSS Reset*/
+html {
+	font-size:125%;
+
+   /* 20÷16=125% min-font-size:12px bug*/
+}
+* {
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+}
+
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,button,input,textarea{padding:0px; margin:0px; border:none;}
+
+a,a:visited{ text-decoration:none; color: #333;}
+
+a:active,a:hover { text-decoration:none;}
+
+a:focus,input:hover,button:hover,input[type='button']:hover{ outline:none;}
+
+i, em, cite { font-style: normal; }
+
+li{ vertical-align:bottom;/*overflow:hidden; */ list-style-type:none;}
+
+
+
+
+
+/* 禁止webkit横屏改变字体大小 */
+
+html{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+
+
+/* 媒体查询 */
+@media only screen and (min-width:481px){
+	/*ipad/windows*/
+body{
+	width:480px;
+	margin:0 auto;	
+}
+}
+@media (min-width: 415px) and (max-width: 480px){
+	/*sony U*/
+}
+@media (min-width: 376px) and (max-width: 414px){
+	/*iphone6P*/
+}
+@media (min-width: 341px) and (max-width: 375px){
+	/*iphone6*/
+}
+@media only screen and (max-width: 340px){
+	/*iphone4/4s/5*/
+}
+
+
+/* 设置HTML5元素为块 */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;padding:0px; margin:0px; border:none;}
+
+
+
+/* 超出隐藏 */
+
+.overflow{ overflow:hidden;} 
+
+
+
+/* 点击去除阴影 */
+
+a,button,input,i{-webkit-tap-highlight-color:rgba(0,0,0,0); -moz-tap-highlight-color:rgba(0,0,0,0); -ms-tap-highlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0);}       
+
+		          
+
+/* float */
+
+.fl{ float: left; }
+
+.fr{ float: right;}
+
+
+
+/* 图片自适应调整 并解决图片缩放的失真问题*/
+
+img{ max-width:100%; height:auto;border:none; interpolation-mode: bicubic;}
+
+
+
+/* 文字居中 */
+
+.txt-center{ text-align:center;}
+
+.txt-justify{ text-align:justify; text-justify:inter-ideograph;}
+
+
+
+/* 自动换行 */
+
+.word-auto{word-wrap: break-word;word-break: normal;}
+
+
+
+/* 自动居中 */
+
+.mg-auto{ margin-left:auto; margin-right:auto; position:relative;}
+
+
+
+/* clearfix */  
+
+.clearfix:after{ visibility: hidden;display: block;font-size: 0;content:" ";clear: both;height: 0;}
+
+.clearfix{ *zoom:1;}
+
+
+
+/* transtion-Hover */
+
+.tianstion{ 
+
+    transition:all ease 0.4s; 
+
+	-moz-transition:all ease 0.4s; 
+
+	-ms-transition:all ease 0.4s; 
+
+	-o-transition:all ease 0.4s;
+
+	-webkit-transition:all ease 0.4s;
+
+}
+
+.area{ width:100%;}
+
+#wrap{ background:#F0F0F0; max-width:640px; position:relative;  border-bottom: 1px solid #e8e8e8;}
+
+
+
+body{
+	  font-family:"Microsoft YaHei";
+	  font-size: 0.7rem;
+	  color:#333;
+	  background: #fff;
+
+}
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1470978649'); /* IE9*/
+  src: url('iconfont.eot?t=1470978649#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1470978649') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1470978649') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1470978649#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.icon {
+  font-family:"iconfont" !important;
+  
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  /* -webkit-text-stroke-width: 0.2px;抗锯齿 */
+}
+.icon-more:before { content: "\e602"; }
+.icon-icon7:before { content: "\e600"; }
+.icon-shoucang:before { content: "\e601"; }
+/* **********************************************************************************************
+                                              首页
+************************************************************************************************* */
+
+/* 滑动图片
+
+.roll-slide{ width:100%;  height:auto; padding:0; background:#F0F0F0;}
+
+.roll-slide .swiper-container{background:#F0F0F0;}
+
+#roll-img img{ display:block; width:auto; max-width:100%; margin:0 auto;} */
+
+
+
+/* 滑动焦点图 */
+
+.swiper-container,.swiper-container1,.swiper-container2 {height:auto; width:100%;text-align:center;margin:0 auto;position:relative; overflow:hidden; z-index:5; background:#F8F8F8;}
+
+.swiper-wrapper {position: relative;z-index:10;}
+
+.swiper-slide {position:relative;text-align:center; float:left;}
+
+.swiper-slide .pro_images{ position:relative; width:100%; height:100%; display:block; overflow:hidden;}
+
+.swiper-slide img{ width:100%; height:12.5rem; vertical-align:middle; position:relative;}
+
+
+
+
+
+
+/* 分页按钮 */
+.pagination,.pagination1,.pagination2{ width: 100%;
+			 height: 18px;
+			position: absolute;
+			z-index: 20;
+			text-align: center;
+			bottom: 10px;
+			padding: 0px 4px;
+			min-width: 58px;
+			height: 18px;
+			overflow: hidden;
+}
+
+
+/* 未选中分页按钮 */
+.pagination .swiper-pagination-switch,.pagination1 .swiper-pagination-switch,.pagination2 .swiper-pagination-switch{ display: inline-block;
+margin: 5px 5px;
+width: 8px;
+height: 8px;
+opacity: 0.2;
+border-radius: 5px;
+cursor: pointer;
+background: #000 none repeat scroll 0% 0%;
+box-shadow: 0px 0px 1px 1px #FFF;}
+
+/* 当前分页按钮 */
+
+.pagination .swiper-active-switch,.pagination1 .swiper-active-switch,.pagination2 .swiper-active-switch{ opacity: 1;
+background: #f7bd68 none repeat scroll 0% 0%;}
+
+/* 导航 */
+.flex{
+	width: 100%;
+	height: 4rem;
+	display: flex;
+	display: -webkit-flex;
+}
+.flex p{
+	color: #333;
+	line-height: 1.2rem;
+}
+.flex .nav1_img ,.flex .nav2_img,.flex .nav3_img {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 2rem; 
+	text-align: center;
+	line-height: 2.325rem;
+	margin: 0 auto;
+}
+.flex .nav1_img{background: #f8b551;}
+.flex .nav2_img,.flex .nav3_img{background: #f5f5f5;}
+.nav1 p{color: #f8b551;}
+.flex img{
+
+	width: 0.65rem;
+	height: 0.65rem;
+}
+.nav1,.nav2,.nav3{
+	 -webkit-flex-grow: 1;
+	 		 flex-grow: 1;
+	margin-top: 1rem;
+	text-align: center;
+}
+.nav1 a,.nav2 a,.nav3 a{
+	display: block;
+}
+/* 内容 */
+#index{
+	padding-bottom: 2.75rem;
+}
+#index .single{
+	margin-top: 0.25rem;
+	display: flex;
+	display: -webkit-flex;	
+}
+#index .single:last-child{
+	margin-bottom: 3rem;
+}
+#index .single .left{
+	width: 59%;
+	height: 6.3rem;
+	 
+}
+#index .single .left img{
+	width: 100%;
+	height: 6.3rem;
+}
+#index .single .right{
+
+	width: 41%;
+	height: 6.3rem;
+	background: #252525; 
+	color: #fff;
+}
+#index .single .right h1{
+	font-size: 0.7rem;
+	text-align: center;
+	line-height: 1.2rem;
+	padding-top: 1.2rem;
+	white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+#index .single .right h1:after{
+	
+}
+#index .single .right>p{font-size: 0.55rem ;line-height: 1rem;	padding-left: 0.3rem;text-align: center;}
+#index .single .right .wrap{
+	display: flex;
+	display: -webkit-flex;
+}
+#index .single .right .end_wrap div{
+ 	width: 30%;
+ 	margin-left: 3%;
+ 	background: #8e8e8d;
+ 	height: 0.75rem;
+ 	border-radius: 0.2rem;
+ 	line-height: 0.75rem;
+
+}
+#index .single .right .begin_wrap div{
+ 	width: 30%;
+ 	margin-left: 3%;
+ 	background: #b4976b;
+ 	height: 0.75rem;
+ 	border-radius: 0.2rem;
+ 	line-height: 0.75rem;
+
+}
+#index .single .right .wrap div p{
+	line-height: 0.75rem;
+	text-align: center;
+}
+/* 媒体查询 */
+@media only screen and (min-width:481px){
+	/*ipad/windows*/
+	#index .single .right .wrap div{
+		font-size: 12px;	
+}
+
+}
+@media (min-width: 415px) and (max-width: 480px){
+	/*sony U*/
+	#index .single .right .wrap div{
+		font-size: 11px;	
+}
+}
+@media (min-width: 376px) and (max-width: 414px){
+	/*iphone6P*/
+	#index .single .right .wrap div{
+		font-size: 9px;	
+}
+}
+@media (min-width: 341px) and (max-width: 375px){
+	/*iphone6*/
+	#index .single .right .wrap div{
+		font-size: 9px;	
+}
+}
+@media only screen and (max-width: 340px){
+	/*iphone4/4s/5*/
+	#index .single .right .wrap div{
+		font-size: 8px;	
+}
+}
+/* 底部栏 */
+footer{
+	z-index: 100;
+	width: 100%;
+	height: 2.5rem;
+	background: #000;
+	display: -webkit-flex;
+	display: flex;
+			justify-content: space-between;
+	-webkit-justify-content: space-between;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+footer div{
+
+	text-align: center;
+	width: 3.75rem;
+}
+footer div a{
+	padding-top: 0.25rem;
+	display: block;
+	width: 3.75rem;
+	height: 2.5rem;
+
+}
+footer div a span{
+	color: #fff;
+}
+footer img{
+	width: 1rem;
+	height: 1rem;
+	margin: 0 auto;
+	display: block;
+}
+footer div a span.now{
+ color: #f8b551;
+}
+/* **********************************************************************************************
+                                              资讯
+************************************************************************************************* */
+.news{
+	padding-bottom: 1rem;
+	background: #dfe3e2;
+}
+.news .wrap{
+	display: block;
+	width: 90%;
+	margin: 3rem  auto 0;
+	background: #fff;
+	border-radius: 0.3rem;
+}
+.news .wrap1{
+	position: relative;
+	width: 90%;
+	margin: 0  auto;
+	background: #fff;
+
+}
+.news .wrap h1{
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	font-size: 0.8rem;
+}
+.news .wrap p{
+	font-size: 0.65rem;
+	color:#787978;
+	line-height: 1.5rem;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.news .wrap>img{
+	width: 100%;
+	height: 8rem;
+}
+.news .wrap .time{
+	display: block;
+	height: 1.25rem;
+	position: absolute; 
+	top: -2rem;
+	left: 31%;
+	background: #c1c4c5;
+	color: #e7e8e8;
+	line-height: 1.25rem;
+	text-align: center;
+	border-radius: 0.75rem;
+	padding: 0 0.5rem;
+}
+.news .wrap .read-more{
+	position: relative;
+}
+.news .wrap .read-more span{
+	font-size: 0.75rem;
+	font-weight: bold;
+	line-height: 1.75rem;
+}
+.news .wrap .read-more img{
+	width: 0.35rem;
+	height: 0.6rem;
+	position: absolute;
+	top: 0.6rem;
+	right: 0;
+}
+/* **********************************************************************************************
+                                              活动
+************************************************************************************************* */
+.activity .wrap{
+	margin-top: 0.5rem;
+	width: 100%;
+	border-bottom:1px solid rgba(0,0,0,0.3);
+}
+.activity .wrap1{
+	width: 90%;
+	margin: 0 auto 0.5rem;
+	display: -webkit-flex;
+	display: flex;
+}
+.activity .wrap1 .left{
+	margin-right: 0.35rem;
+	width:35%;
+	height: 4.75rem;
+}
+.activity .wrap1 .left img{
+	width: 100%;
+	height: 100%;
+}
+.activity .wrap1 .right{
+	width: 65%;
+}
+.activity .wrap1 .right h1{
+	font-size: 0.7rem;
+	padding-bottom: 0.3rem;
+}
+.activity .wrap1 .right p{
+	font-size: 0.65rem;
+	color: #807d7d;
+	padding-bottom: 0.3rem;
+}
+.activity .wrap1 .right span{
+	
+	color: #807d7d;
+	font-family: '微软雅黑';
+	font-weight: bold;
+}
+/* 媒体查询 */
+@media only screen and (min-width:481px){ .activity .wrap1 .right span{font-size: 0.8rem;}}    /*ipad/windows*/
+@media (min-width: 415px) and (max-width: 480px){.activity .wrap1 .right span{font-size: 12px}}   /*sony U*/
+@media (min-width: 376px) and (max-width: 414px){.activity .wrap1 .right span{font-size: 12px;}}    /*iphone6P*/
+@media (min-width: 341px) and (max-width: 375px){.activity .wrap1 .right span{font-size: 11px;}}		/*iphone6*/
+@media only screen and (max-width: 340px){.activity .wrap1 .right span{font-size: 9px}}				/*iphone4/4s/5*/
+
+.activity .wrap1 .right span img{
+width: .6rem;
+height: .6rem;
+padding: 0 0.2rem 0.2rem 0;
+
+vertical-align: middle;
+}
+.activity .wrap1 .right span i{
+	color: #ffa200;
+	padding: 0 0.2rem 0 0;
+}
+
+/* **********************************************************************************************
+                                              活动详情
+************************************************************************************************* */
+.details .banner img{
+	width: 100%;
+}
+.details .time h1{
+	font-size: 0.75rem;
+	font-family: '微软雅黑';
+	text-align: center;
+	padding: 0.5rem;
+}
+.details .time p{
+	border-top: 1px solid rgba(0,0,0,0.2);
+	line-height: 1.5rem;
+}
+.details .time p img{
+	width: 0.6rem;
+	height: 0.6rem;
+	padding-right: 0.2rem;
+}
+.details .time p span{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+.details .btn {
+	width: 100%;
+	height: 2rem;
+	background: #e7a71e;
+	text-align: center;
+	margin-top: 1rem;
+}
+.details .btn a{
+	width: 100%;
+	height: 2rem;
+	color: #fff;
+    font-size: 0.8rem;
+	font-family: '微软雅黑';
+	line-height: 2rem;
+}
+.details article h2{
+	text-align: center;
+	color: #e7a71e;
+	font-size: 0.8rem;
+	line-height: 2rem;
+
+}
+.details article p{
+	text-align: center;
+
+	font-size: 0.8rem;
+
+}
+.details .footer div{
+	 width: 90%;
+	 border:1px dotted #ed7032;
+	 margin: 1rem auto 0.5rem;
+}
+/* **********************************************************************************************
+                                              收藏
+************************************************************************************************* */
+.collect{
+	padding-bottom:2.5rem;
+}
+.collect,.collect .mui-table-view{
+	background: #e3effb;
+}
+.collect .wrap{
+	margin-bottom: 0.4rem;
+}
+.collect .top{
+	width: 100%;
+	background: #fff;
+	height: 1.4rem;
+}
+.collect .top-text{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	line-height: 1.4rem;
+}
+.collect .top-text .left{
+	float: left;
+}
+.collect .top-text .right{
+	float: right;
+}
+.collect .mui-table-view-cell,.collect .mui-slider-handle{background: #f4f5f5;}
+
+.collect .main{
+	background: #f4f5f5;
+	display: flex;
+	display: -webkit-flex;
+}
+.collect .main img{
+	width: 4.5rem;
+	height: 4rem;
+	margin-right: 0.6rem;
+}
+.collect .text h1{
+	font-size:0.65rem;
+	line-height: 1rem;
+}
+.collect .text span{
+	font-size: 0.6rem;
+}
+.collect .text p{
+	font-size: 0.6rem;
+ color: #333;
+}
+/* **********************************************************************************************
+                                              没有收藏
+************************************************************************************************* */
+.no_collect .wrap{
+	position: fixed;
+	top: 35%;
+	left: 20%;
+}
+.no_collect .wrap img{
+	display: block;
+	margin: 0 auto;
+	width: 3.25rem;
+	height: 3.25rem;
+	
+}
+.no_collect p{
+	margin-top: 0.5rem;
+	text-align: center;
+}
+/* **********************************************************************************************
+                                              个认中心
+************************************************************************************************* */
+
+.person .bg{
+	width: 100%;
+	height: 0.4rem;
+	background: #e3effa;
+}
+.person .banner{
+	width: 100%;
+	height: 4.25rem;
+	background: #3d3d3d;
+	line-height: 4.24rem;
+}
+.person .banner .banner-wrap{
+	width: 90%;
+	margin: 0 auto;
+}
+.person .banner img{
+	width: 3.3rem;
+	height: 3.3rem;
+	border-radius: 3.3rem;
+	vertical-align: middle;
+
+}
+.person .banner span{
+	color: #fff;
+	vertical-align: middle;
+	padding-left: 0.4rem;
+}
+
+.person .mid{  
+	width: 100%;
+	background: #fff;
+}
+.person  .mid-top-wrap{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.person .mid-top{
+	line-height: 2.25rem;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(0,0,0,0.1)
+
+}
+.person .mid-top .left{
+	vertical-align: middle;
+	float: left;
+}
+.person .mid-top .right{
+	float: right;
+	vertical-align: middle;
+}
+.person .mid-top .left img,.person .mid-top .right img{
+	width: 0.6rem;
+	height:0.8rem;
+	vertical-align: middle;
+
+}
+.person .mid-top .left img{padding-right: 0.3rem;}
+.person .mid-top .right img{padding-left: 0.3rem;}
+
+.person  .mid-main{
+	display: flex;
+	display: -webkit-flex;
+	width: 90%;
+	margin: 0 auto;
+			justify-content:space-around;
+	-webkit-justify-content:space-around;
+	padding: 0.5rem 0;
+}
+
+.person .mid-main img{
+	width: 1.35rem;
+	height: 1.25rem;
+	display: block;
+	margin: 0 auto;
+}
+.person .list li{
+	width: 100%;
+	height: 2.25rem;
+	line-height: 2.25rem;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.person .list li div{
+
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+
+	
+}
+.person .list img{
+	width: 0.75rem;
+	height: 0.75rem;
+	vertical-align: middle;
+}
+.person  a{
+	display: block;
+}
+.person .list li .left{
+	padding-right: 0.3rem;
+}
+.person .list li .right{
+	float: right;
+	margin-top: 0.7rem;
+
+}/* **********************************************************************************************
+                                              地址
+************************************************************************************************* */
+.address .add-address a{
+	width: 90%;
+	height: 2.25rem;
+	background: #3d3d3d;
+	margin: 0 auto; 
+	position: fixed;
+	bottom: 2%;
+	left: 0;
+	right: 0;
+	color:#fff;
+	text-align: center;
+	line-height: 2.25rem;
+
+}
+.address .add-address a img{
+	width: 0.8rem;
+	height: 0.8rem;
+	padding-right: 0.3rem;
+}
+.address .wrap {
+	width: 100%;
+	
+}
+.address .wrap .top{
+	width: 95%;
+	margin: 0.5rem auto;
+	overflow: hidden;
+}
+.address .wrap .top .left{
+	float: left;
+}
+.address .wrap .top .left .mr{
+	display: inline-block;
+	width: 3rem;
+	color: #fff;
+	font-size: 0.6rem;
+	background: #dab26c;
+	text-align: center;
+}
+.address .wrap .top .right{
+	float: right;
+}
+.address .wrap .botm{
+		width: 95%;
+	margin:0 auto 0.5rem;
+}
+.address .mui-table-view-cell,.collect .mui-slider-handle{background: #fff;}
+.address,.address .mui-table-view{
+	background: #fff;
+}
+.address  .mui-btn-grey img{
+	display: block;
+	margin: 0 auto;
+	width: 0.9rem;
+	height: 0.9rem;
+}
+.address  .mui-btn-grey span{
+	display: block;
+	text-align:center;
+
+}
+
+/* **********************************************************************************************
+                                              没有地址
+************************************************************************************************* */
+.no_address .wrap{
+	position: fixed;
+	top: 35%;
+	left: 20%;
+}
+.no_address .wrap img{
+	display: block;
+	margin: 0 auto;
+	width: 3.25rem;
+	height: 3.25rem;
+	
+}
+.no_address p{
+	margin-top: 0.5rem;
+	text-align: center;
+}
+.no_address a{
+	width: 90%;
+	height: 2.25rem;
+	background: #3d3d3d;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 2%;
+	left: 0;
+	right: 0;
+	color:#fff;
+	visibility:middle;
+
+}
+.no_address a {
+	text-align: center;
+	line-height: 2.25rem;
+}
+.no_address a img{
+	width: 0.8rem;
+	height: 0.8rem;
+	padding-right: 0.3rem;
+}
+
+
+/* **********************************************************************************************
+                                              添加地址
+************************************************************************************************* */
+.add_address{
+	background: #fff;
+}
+.add_address .wrap1,.add_address .wrap2{
+	width: 90%;
+	margin: 0 auto;
+}
+.add_address input{
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	margin: 0;
+	font-family: '微软雅黑';
+	font-size: 0.7rem;
+	border-radius: 0;
+}
+.add_address .mui-input-row input{
+	width: 75%;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+
+	
+}
+.add_address .mui-input-row label{
+	font-size: 0.8rem;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	height: 40px;
+	width: 20%;
+}
+.add_address  .mui-table-view-cell{
+	color: #8f8c8c;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.add_address .wrap2 a{
+	display: block;
+}
+.add_address .wrap2 input{
+	width: 100%;
+	height: 2.25rem;
+	background: #3d3d3d;
+	margin-top: 0.75rem;
+	color: #fff;
+}
+.add_address .mui-switch-handle{
+	background: #fff;
+	border:1px solid rgba(0,0,0,0.1);
+}
+.add_address .mui-active{
+	background: #6f6666;
+	border-color: rgba(0,0,0,0.1);
+}
+/* **********************************************************************************************
+                                              拍卖规则
+************************************************************************************************* */
+.rule{
+	line-height: 1rem;
+}
+.rule h1{
+	text-align: center;
+	font-size: 0.75rem;
+}
+.rule span{
+	color: #e7a71e;
+}
+.rule .indent{
+	text-indent: 2rem;
+}
+.rule .wrap{
+	width: 90%;
+	margin: 0.3rem auto;
+}
+.rule .footer div{
+	 width: 90%;
+	 border:1px dotted #ed7032;
+	 margin: 1rem auto 0.5rem;
+}
+/* **********************************************************************************************
+                                              发表评价
+************************************************************************************************* */
+.rated .wrap{
+	width: 100%;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.rated .wrap .in{
+	display: flex;
+	width: 90%;
+	margin: 0.5rem auto;
+}
+.rated .wrap .in img{
+	 flex-grow:0;
+	 flex-shrink:0;
+	width: 5rem;
+	height: 5rem;
+}
+.rated .wrap .in textarea{
+	width: 100%;
+	margin-left: 0.5rem;
+	border: none;
+	outline: none;
+	resize:none;
+}
+
+
+.rated .mydiv{
+	display: inline-block;
+}
+.rated .main{
+	width: 90%;
+	margin: 0.2rem auto;
+}
+.rated  ul{
+   list-style-type: none;
+    overflow: hidden;
+
+}
+.rated .star_ul li{
+	margin-right: 0.3rem;
+    float:left;
+}
+.rated .star_ul img{
+
+     width: 0.8rem;
+     height: 0.8rem;
+     vertical-align: text-bottom;
+
+    
+ }
+ .rated .main span{
+ 	line-height: 1.5rem;
+ }
+
+
+
+
+
+
+
+.rated .btn{
+	width: 100%;
+	background: #d8e5e6;
+	height: 1.5rem;
+}
+
+.rated .btn .left{
+	line-height: 1.5rem;
+ 	margin-left: 1rem;
+ 	float: left;
+}
+.rated .btn .left img{
+	width: 0.9rem;
+	height: 0.9rem;
+	vertical-align:text-bottom;
+
+}
+.rated .btn .right{
+	width: 3.75rem;
+	height: 1.5rem;
+	background: #f8b551;
+	float: right;
+	text-align: center;
+	line-height: 1.5rem;
+
+}
+.rated .btn .right a{
+	display: block;
+	color: #fff;
+}
+
+/* **********************************************************************************************
+                                              我的订单
+************************************************************************************************* */
+.myorder,.myorder .mui-content,.myorder .mui-table-view{
+	background: #e3f0f9;
+
+}
+
+/* 选项卡 */
+.myorder .mui-content .mui-segmented-control{
+	background: #fff;
+	border: none;
+}
+.myorder .mui-content .mui-segmented-control a{
+	color: #000;
+	font-size: 0.7rem;
+	border: none;
+}
+.myorder .mui-content .mui-segmented-control .mui-active{
+	color: red;
+	background: #fff;
+}
+/* li的 */
+.myorder .mui-control-content .mui-table-view-cell {
+
+	padding:0;
+	border: none;
+	background: #fff;
+	margin-bottom:0.5rem;
+}
+.myorder .mui-control-content .mui-table-view-cell:after{
+	background: none;
+}
+
+.myorder .wrap{
+	
+	width: 90%;
+	margin: 0 auto;
+}
+.myorder .top{
+	margin-top: 0.5rem;
+	overflow: hidden;
+}
+.myorder .top .left{
+	float: left;
+}
+.myorder .top .right{
+	font-size: 0.6rem;
+	color: #f57c7c;
+	float: right;
+}
+
+.myorder .main{
+	border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+.myorder .main-wrap{
+	margin: 0.5rem auto;
+	display: -webkit-flex;
+}
+.myorder .main-wrap p{
+	font-size: 0.6rem;
+	color: #3d3d3d;
+}
+.myorder .main img{
+	width: 4.5rem;
+	height: 3.5rem;
+	margin-right: 0.2rem;
+}
+
+
+.myorder .botm{
+	height: 2rem;
+	text-align: right;
+	font-family: '微软雅黑';
+}
+.myorder .botm span{
+	margin-top: 0.5rem;
+	margin-left: 0.5rem;
+	font-size:0.6rem;
+	height: 1rem;
+	line-height: 1rem;
+	width: 4rem;
+	display: inline-block;
+	text-align: center;
+	border-radius: 0.3rem;
+}
+.myorder .botm .left{border: 1px solid #333;}
+.myorder .botm .right{border: 1px solid #f57c7c;color:#f57c7c; }
+/* **********************************************************************************************
+                                              专场
+************************************************************************************************* */
+/* 主体 */
+.special header{
+	padding: 0.5rem 0;
+	background: #fff;
+}
+.special header .wrap{
+	width: 90%;
+	margin: 0 auto;
+} 
+.special header h1{
+	font-size: 0.7rem;
+	background: #fff;
+	padding-bottom: 0.3rem;
+}
+.special header h1 span{
+	display: inline-block;
+	text-align: center;
+	font-size: 0.6rem;
+	background: #a19e9e;
+	color: #fff;
+	width: 2rem;
+	height: 0.75rem;
+	line-height: 0.75rem;
+	font-weight: normal;
+	
+	border-radius: 0.2rem;
+
+}
+.special header .wrap>span{
+	display: inline-block;
+	text-align: center;
+	font-size: 0.6rem;
+	background: #a19e9e;
+	color: #fff;
+	width: 2.5rem;
+	height: 1rem;
+	font-weight: normal;
+	border-radius: 0.2rem;
+	margin-right: 0.5rem;
+}
+/* 按钮区域 */
+.special .up{
+	margin-top: 0.45rem;
+	background: #fff;
+	border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+.special .up .wrap{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0.25rem 0;
+}
+.special .up .wrap p{
+	width: 50%;
+	float: left;
+	  white-space: nowrap;
+}
+.special .up1{
+	padding: 0.5rem 0;
+	background: #fff;
+}
+.special .up1 .wrap{
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+}
+.special .up1 button{
+	border-radius: 0.3rem;
+	color: #fff;
+	width: 3.75rem;
+	height: 1.25rem;
+	background: #f9c474;
+	margin-right: 0.2rem;
+}
+.special .up1 span{
+
+	line-height: 1.25rem;
+	margin-left: 0.1rem;
+}
+.special .up1 span i{
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	color: #fff;
+	background: #888;
+	line-height: 1rem;
+	font-size:0.6rem;
+	border-radius: 0.2rem;
+	text-align: center;
+}
+/* 媒体查询 */
+@media only screen and (min-width:481px){
+	.special .wrap p{font-size: 0.7rem;}
+	.special .up1 span{font-size: 0.7rem;
+}}    /*ipad/windows*/
+@media (min-width: 415px) and (max-width: 480px){
+	.special .wrap p{font-size: 0.7rem;}
+	.special .up1 span{
+	font-size: 0.7rem;
+}}   /*sony U*/
+@media (min-width: 376px) and (max-width: 414px){
+	.special .wrap p{font-size: 0.6rem;}
+	.special .up1 span{
+	font-size: 0.6rem;
+}}    /*iphone6P*/
+@media (min-width: 341px) and (max-width: 375px){
+	.special .wrap p{font-size: 0.55rem;}
+	.special .up1 span{
+	font-size: 0.55rem;
+}}		/*iphone6*/
+@media only screen and (max-width: 340px){
+	.special .wrap p{font-size: 0.5rem;}
+	.special .up1 span{font-size: 0.5rem;}
+	.special .up1 span i{
+	display: inline-block;
+	width: 0.8rem;
+	height: 0.8rem;
+	line-height: 0.8rem;}
+
+	}	/*iphone5*/
+
+/* 介绍区域 */
+.special .middle{
+	margin-top: 0.45rem;
+	background: #fff;
+	border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+.special .middle2{
+	background: #fff;
+}
+.special .middle .wrap{
+	padding: 0.5rem 0;
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+
+}
+.special .middle .wrap .p1{
+	display: flex;
+	display: -webkit-flex;
+	width: 90%;
+}
+.special .middle .wrap p span{
+	display: block;
+	font-size: 0.55rem;
+}
+@media only screen and (max-width: 340px){
+.special .middle .wrap p span{
+	font-size: 0.5rem;
+}
+	}	/*iphone5*/
+.special .middle .wrap .text1{
+	
+	width: 3.5rem; 
+	font-size: 0.6rem;
+}
+.special .middle .wrap .text2{
+	width: 5rem;	
+}
+.special .middle .wrap .text3{
+	width: 7.5rem;
+	  white-space: nowrap;
+}
+.special .middle2 .wrap{
+	width: 90%;
+	margin: 0 auto;
+	padding: 0.5rem 0;
+	overflow: hidden;
+	display: flex;
+	display: -webkit-flex;
+		    justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.special .middle2 .wrap .text1{
+	
+	width: 3.5rem; 
+	font-size: 0.6rem;
+	
+}
+.special .middle2 .wrap .text2{
+	width: 90%;
+	
+	font-size: 0.6rem;
+	
+}
+/* 评论区域 */
+.special .bottom{
+	margin-top: 0.45rem;
+	margin-bottom: 0.45rem; 
+	background: #fff;
+	
+}
+.special .mui-content .mui-segmented-control{
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	background: #fff;
+
+}
+.special .mui-content .mui-segmented-control .mui-control-item{
+		color: #000;
+		border:none;
+}
+.special .mui-content .mui-segmented-control .mui-active{
+	color: #f8b551;
+	border:none;
+	border-top: 1px solid #f8b551;
+	border-left: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(0,0,0,0.1);
+	background: none;
+	background: url(../images/history.png) no-repeat top center;
+	background-size: 0.255rem 0.225rem;
+}
+.special .mui-table-view-cell img{
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.special .mui-table-view-cell .history p{
+	overflow: hidden;
+	line-height: 1.25rem;
+
+}
+.special #item2 .mui-table-view-cell .history p{
+	line-height: 1rem;
+}
+.special .mui-table-view-cell .history .p{
+	margin-left: 0.4rem;
+	width: 100%;
+}
+.special .mui-table-view-cell .history{
+	display: flex;
+	display: -webkit-flex;
+}
+.special .mui-table-view-cell .history .left{
+	float: left;
+}
+.special .mui-table-view-cell .history .right{
+	float: right;
+}
+.special .getnew{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+.special .getnew p {
+	line-height: 2rem;
+	text-align: center;
+}
+.special .getnew input{
+	height: 1.5rem;
+	border-radius: 0.3rem;
+}
+.special .getnew span{
+	display: block;
+	width: 2.5rem;
+	height: 1rem;
+	background: #f8b551;
+	color: #fff;
+	text-align:center;
+	border-radius: 0.2rem;
+	position: absolute;
+	right: 0.5rem;
+	top: 2.25rem;
+}
+/* 其他 */
+.special .swiper-container1{
+
+	background: #fff;
+	height: 12.5rem;
+}
+.special .swiper-container2{
+	margin-bottom: 3rem;
+	background: #fff;
+	height: 12.5rem;
+}
+.special{
+	background: #e3effa;
+	 
+}
+.special .bottomwrap .wrap{
+	background: #fff;
+	font-size: 0.6rem;
+	width: 33%;
+	float: left;
+}
+.special .bottomwrap .wrap p{
+	line-height: 1rem;
+}
+.special .bottomwrap .wrap img{
+	width: 90%;
+	height: 3rem;
+	margin-top: 0.2rem;
+	margin-bottom: 0.3rem;
+}
+.special .bottomwrap{
+	background: #fff;
+}
+.special .bottomwrap p{
+	text-align: center;
+	line-height: 1.2rem;
+}
+
+/* 虚拟键盘样式 */
+#auth_keybord7724{
+	position: fixed; 
+	z-index: 10; 
+	display: none;
+	 overflow: hidden; 
+	 width: 100%; 
+	 height: 17.5rem; 
+	bottom: 2.5rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	  background: #f2f0f1;
+}
+#auth_keybord_exit{
+	position: absolute;
+	 z-index: 1; 
+	 right: 0px;
+	  cursor: pointer; 
+	  text-align: center; 
+	  width: 3rem; 
+	  height: 2rem; 
+	  line-height: 2rem;
+
+	  font-family: 微软雅黑, arial;
+	   font-size: 0.6rem; 
+	   letter-spacing: 5px; 
+	   background: #dcdada;
+}
+#auth_keybord_menu{
+	position: relative; 
+	cursor: move; 
+	margin: auto; 
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	background: #e6e6e6;
+	padding-left: 5%;
+	font-size: 0.6rem;
+}
+.number_list{
+	position: relative;
+	 margin: 1rem auto auto;
+	 width: 100%;
+	 height: 9rem;
+}
+.number_list li{
+	position: relative; 
+	margin: auto;
+	overflow: hidden;
+	float: left;
+	width: 33.33%; 
+	height: 2.25rem;
+
+}
+.number_list li button{
+	position: relative; 
+	float: left;
+	padding: 0px; 
+	cursor: pointer;
+	text-align: center;
+	width: 100%; 
+	height: 2.25rem; 
+	border-radius: 0;
+	border-bottom: 1px solid rgba(0,0,0,0.1); 
+	border-left: 1px solid rgba(0,0,0,0.1); 
+	line-height: 2rem; 
+	 
+	font-family: 微软雅黑, arial; 
+	font-size: 16px; 
+	color: rgb(0,0,0); 
+	top: 0px;
+	 background: rgb(255,255,255);
+	 outline: none;
+
+}
+/* 增加数字 */
+.special .mui-numbox{
+	display: none;
+	border: 1px solid #efcf6c;
+	margin-top: 0.5rem;
+}
+.special .mui-btn-numbox-minus,.special .mui-btn-numbox-plus{
+	color: #fff;
+	background: #f9b552;
+}
+.special .mui-input-numbox{
+	border: none!important;
+}
+.special .auth_keybord .wrap{
+	width: 90%;
+	margin: 0 auto;
+}
+.special .auth_keybord .wrap>button{
+	width: 100%;
+	background: #f9b552;
+	height: 2rem;
+	margin-top: 0.5rem;
+	color: #fff;
+}
+
+.special .auth_keybord .next{
+	position: relative;
+	margin-top: 0.5rem
+}
+.special .auth_keybord .next input{
+	height: 1.5rem;
+	margin: 0;
+}
+.special .auth_keybord .next .test1{
+	height: 2rem;
+	margin-bottom: 0.5rem;
+	font-size: 0.6rem;
+}
+.special .auth_keybord .next .test2{
+	width: 50%;
+	display: inline-block;
+	font-size: 0.6rem;
+	
+}
+.special .auth_keybord .next span{
+	/* position: absolute;
+	top: 2rem;
+	right: 0; */
+	font-size: 0.6rem;
+}
+.special .auth_keybord .next #send{
+	display: inline-block;
+	width: 4rem;
+	font-size: 0.6rem;
+	background: none;	
+}
+.special .auth_keybord .wrap #sure{
+	display: none;
+}
+/* **********************************************************************************************
+                                              专场分类
+************************************************************************************************* */
+.special_all .banner{
+	display: block;
+	width: 100%;
+	height: 12.5rem;
+}
+.special_all .banner img{
+	width: 100%;
+	height: 12.5rem;
+}
+.special_all .br{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.special_all .br .middle{
+	
+	line-height: 2rem;
+		flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+}
+.special_all .br .left,.special_all .br .right{
+	margin-top: 1rem;
+	width: 50%;
+	border-top: 2px solid #5f5f5f;
+}
+/* 主体 */
+.special_all .main{
+	
+	overflow: hidden;
+}
+.special_all .main .wrap{
+	width: 46%;
+	float: left;
+	margin: 2%;
+}
+.special_all .main .wrap img{
+	width: 100%;
+	height: 5rem;
+	display: block;
+
+}
+.special_all .main .wrap div{
+	background: #f8b551;
+	text-align: center;
+	font-size: 0.6rem;
+	color: #fff;
+		
+}
+.special_all .main .wrap p{font-size: 0.55rem;}
+.special_all .main .wrap p span{
+	color: #f8b551;
+}
+/* 媒体查询 */
+@media only screen and (min-width:481px){
+	/*ipad/windows*/	.special_all .main .wrap p{font-size: 0.6rem;}
+}
+}
+@media (min-width: 415px) and (max-width: 480px){
+	/*sony U*/.special_all .main .wrap p{font-size: 0.6rem;}
+}
+@media (min-width: 376px) and (max-width: 414px){
+	/*iphone6P*/.special_all .main .wrap p{font-size: 0.6rem;}
+}
+@media (min-width: 341px) and (max-width: 375px){
+	/*iphone6*/.special_all .main .wrap p{font-size: 0.55rem;}
+}
+@media only screen and (max-width: 340px){
+	/*iphone4/4s/5*/.special_all .main .wrap p{font-size: 0.5rem;}
+}
+/* 轮播图 */
+.special_all .swiper-container2{
+	margin-bottom: 3rem;
+	background: #fff;
+	height: 12.5rem;
+
+}
+.special_all .bottomwrap .wrap{
+	background: #fff;
+	font-size: 0.6rem;
+	width: 33%;
+	float: left;
+}
+.special_all .bottomwrap .wrap p{
+	line-height: 1rem;
+}
+.special_all .bottomwrap .wrap img{
+	width: 90%;
+	height: 3rem;
+	margin-top: 0.2rem;
+	margin-bottom: 0.3rem;
+}
+.special_all .bottomwrap{
+	background: #fff;
+}
+.special_all .bottomwrap p{
+	text-align: center;
+	line-height: 1.2rem;
+}
+/* **********************************************************************************************
+                                              资讯详情
+************************************************************************************************* */
+.new_detail h1 {
+	font-size: 0.8rem;
+	padding-top: 0.4rem;
+}
+.new_detail p {
+	font-size: 0.65rem;
+	line-height: 1.2rem;
+}
+.new_detail .wrap{
+	width: 90%;
+	margin: 0 auto;
+}
+.new_detail h2{
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+}
+.new_detail .footer div{
+	 width: 90%;
+	 border:1px dotted #ed7032;
+	 margin: 1rem auto 0.5rem;
+}
