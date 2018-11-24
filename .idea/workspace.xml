@@ -2,98 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f07fb2-3078-4abc-ad24-35c5daeafd55" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/page/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/page/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/page/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/src/views/index/activity.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/src/views/index/auctionList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/src/views/index/news.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/src/views/index/person.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/views/About.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/views/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/activity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/activity_details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/add_address.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/address.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/collect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/css/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/css/mui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/css/swiper-3.3.1.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/fonts/iconfont.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/fonts/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/fonts/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/fonts/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/fonts/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/fonts/mui.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/add_address.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/change.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/check0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/collect1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/collection.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/collection2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/del.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/dt1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/dt2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/dt3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/history.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/home2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/icon2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/nav1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/nav2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/nav3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/news1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/news_d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/news_more.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/no_address.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/no_collect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/p_nav01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/p_nav02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/p_nav1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/p_nav11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/p_nav12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/p_nav13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/p_nav2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/p_nav3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/p_nav4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/person1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/personal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/personal2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/scroll1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/star_empty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/star_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/time1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/time2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/images/time3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/js/mui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/js/numkeyboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/js/script_y.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/js/swiper-2.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/myorder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/new_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/news.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/no_address.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/no_collect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/p_collect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/person.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/rated.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/rule.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/special.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouce/special_all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/src/views/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/views/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/src/views/index/collection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/views/index/collection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/src/views/index/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/views/index/index.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -104,21 +22,104 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/api/composer.json</pharConfigPath>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/page/.eslintrc.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/src/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="352">
+              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+              <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/src/views/index/activity.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/src/views/index/news.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-39">
+              <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/src/views/index/auctionList.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page/src/views/index/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="5" column="49" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>img</find>
+      <find>src</find>
+      <find>3</find>
+      <find>swiper-container2</find>
+      <find>swiper-container</find>
+      <find>news</find>
+      <find>资讯</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/page/src/views/index/collection.vue" />
+        <option value="$PROJECT_DIR$/page/src/views/index/person.vue" />
+        <option value="$PROJECT_DIR$/page/src/views/Index.vue" />
+        <option value="$PROJECT_DIR$/page/src/views/index/auctionList.vue" />
+        <option value="$PROJECT_DIR$/page/src/views/index/news.vue" />
+        <option value="$PROJECT_DIR$/page/src/router.js" />
+        <option value="$PROJECT_DIR$/page/src/views/index/index.vue" />
+        <option value="$PROJECT_DIR$/page/src/views/index/activity.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/api/vendor/composer" />
+      <path value="$PROJECT_DIR$/api/vendor/topthink/think-installer" />
+    </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="475" />
@@ -126,12 +127,15 @@
     <option name="width" value="1310" />
     <option name="height" value="755" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,17 +148,40 @@
               <item name="auction" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="auction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auction" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auction" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auction" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,16 +209,21 @@
       <workItem from="1542934506630" duration="3000" />
       <workItem from="1542943922219" duration="35000" />
       <workItem from="1542951832450" duration="31000" />
+      <workItem from="1542974491696" duration="605000" />
+      <workItem from="1542975154906" duration="102000" />
+      <workItem from="1542975267168" duration="5830000" />
+      <workItem from="1543019129554" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="281000" />
+    <option name="totallyTimeSpent" value="8929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14597094" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -203,13 +235,15 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="运行" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +254,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/src/views/index/collection.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1988">
+          <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/src/views/index/person.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1027">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/src/views/Index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/src/views/index/auctionList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/src/views/index/news.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39">
+          <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/src/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/src/views/index/activity.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/src/views/index/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="49" />
         </state>
       </provider>
     </entry>

@@ -23,6 +23,26 @@ export default new Router({
           name: 'collection',
           component: () => import('./views/index/collection.vue')
         },
+        {
+            path: '/person',
+            name: 'person',
+            component: () => import('./views/index/person.vue')
+        },
+        {
+            path: '/auctionList',
+            name: 'auctionList',
+            component: () => import('./views/index/auctionList.vue')
+        },
+        {
+            path:'/news',
+            name:'news',
+            component:() => import('./views/index/news.vue')
+        },
+        {
+            path:'/activity',
+            name:'activity',
+            component:() => import('./views/index/activity.vue')
+        }
       ]
     },
 

@@ -2,15 +2,26 @@
     <div id="index">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="special_all.html"><img src="../../assets/images/1.jpg" alt=""></a></div>
-                <div class="swiper-slide"><a href="special_all.html"><img src="../../assets/images/scroll1.jpg" alt=""></a></div>
-                <div class="swiper-slide"><a href="special_all.html"><img src="../../assets/images/1.jpg" alt=""></a></div>
+                <div class="swiper-slide">
+                    <router-link to="/auctionList">
+                        <img src="../../assets/images/1.jpg" alt="">
+                    </router-link>
+                </div>
+                <div class="swiper-slide">
+                    <router-link to="/auctionList">
+                        <img src="../../assets/images/scroll1.jpg" alt="">
+                    </router-link>
+                </div>
+                <div class="swiper-slide">
+                    <router-link to="/auctionList">
+                        <img src="../../assets/images/1.jpg" alt="">
+                    </router-link>
+                </div>
             </div>
 
             <!--  焦点图按钮 -->
             <div class="swiper-pagination"></div>
-            <!-- 如果需要滚动条 -->
-            <div class="swiper-scrollbar"></div>
+
         </div>
         <!-- 导航 -->
         <nav class="flex">
@@ -23,17 +34,17 @@
             </div>
 
             <div class="nav2">
-                <a href="news.html">
+                <router-link to="/news">
                     <div class="nav2_img"><img src="../../assets/images/nav2.png" alt=""></div>
                     <p>资讯</p>
-                </a>
+                </router-link>
             </div>
 
             <div class="nav3">
-                <a href="activity.html">
+                <router-link to="/activity">
                     <div class="nav3_img"><img src="../../assets/images/nav3.png" alt=""></div>
                     <p>线下</p>
-                </a>
+                </router-link>
             </div>
 
         </nav>
@@ -267,18 +278,14 @@
     import Swiper from 'swiper'
     export  default  {
         mounted(){
-            var mySwiper = new Swiper('.swiper-container', {
+            new Swiper('.swiper-container', {
                 autoplay :true,
-                // 垂直切换
-                // direction: 'vertical',
                 loop:true,
                 // 如果需要分页器
                 pagination: {
                     el: '.swiper-pagination',
                     clickable:true,
-
                 },
-
             })
       },
 
