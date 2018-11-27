@@ -43,7 +43,7 @@
                     {
                         publisher: '昌化石专场',
                         title: '昌化玻璃白冻 瑞兽钮正章',
-                        img: require('../../assets/images/collect1.jpg'),
+                        img: require('@/assets/images/collect1.jpg'),
                         startTime: '2016-07-11 22:00:00',
                         endTime: '2016-07-18 22:00:00',
                         topPrice: '15000'
@@ -51,7 +51,7 @@
                     {
                         publisher: '昌化石专场',
                         title: '昌化玻璃白冻 瑞兽钮正章',
-                        img: require('../../assets/images/collect1.jpg'),
+                        img: require('@/assets/images/collect1.jpg'),
                         startTime: '2016-07-11 22:00:00',
                         endTime: '2016-07-18 22:00:00',
                         topPrice: '15000'
@@ -59,7 +59,7 @@
                     {
                         publisher: '昌化石专场',
                         title: '昌化玻璃白冻 瑞兽钮正章',
-                        img: require('../../assets/images/collect1.jpg'),
+                        img: require('@/assets/images/collect1.jpg'),
                         startTime: '2016-07-11 22:00:00',
                         endTime: '2016-07-18 22:00:00',
                         topPrice: '15000'

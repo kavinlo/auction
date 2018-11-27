@@ -889,9 +889,7 @@ vertical-align: middle;
 /* **********************************************************************************************
                                               添加地址
 ************************************************************************************************* */
-.add_address{
-	background: #fff;
-}
+
 .add_address .wrap1,.add_address .wrap2{
 	width: 90%;
 	margin: 0 auto;
@@ -903,12 +901,14 @@ vertical-align: middle;
 	font-family: '微软雅黑';
 	font-size: 0.7rem;
 	border-radius: 0;
+	height: 40px;
+	padding: 10px 15px;
 }
 .add_address .mui-input-row input{
-	width: 75%;
+	font-size: 0.8rem;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
-
-	
+	height: 40px;
+	width: 20%;
 }
 .add_address .mui-input-row label{
 	font-size: 0.8rem;

@@ -1,7 +1,7 @@
 <template>
     <div class="special_all">
         <a class="banner">
-            <img src="../../assets/images/3.jpg" alt="">
+            <img src="@/assets/images/3.jpg" alt="">
         </a>
         <div class="br">
             <div class="left"></div>
@@ -9,41 +9,41 @@
             <div class='right'></div>
         </div>
         <div class="main">
-            <a href="special.html" class="wrap">
-                <img src="../../assets/images/4.jpg" alt="">
+            <router-link to="/special" class="wrap">
+                <img src="@/assets/images/4.jpg" alt="">
                 <div>昌化玻璃白冻 瑞兽钮正章</div>
                 <p>开拍时间: 2016/8/2 19:30:00</p>
                 <p>结束时间: 2016/7/14 22:00:00</p>
                 <p>拍卖状态: <span>竞拍中 围观291 出价21</span></p>
                 <p>最高价:<span>￥12600</span></p>
-            </a>
+            </router-link>
 
-            <a href="special.html" class="wrap">
-                <img src="../../assets/images/4.jpg" alt="">
+            <router-link to="/special" class="wrap">
+                <img src="@/assets/images/4.jpg" alt="">
                 <div>昌化玻璃白冻 瑞兽钮正章</div>
                 <p>开拍时间: 2016/8/2 19:30:00</p>
                 <p>结束时间: 2016/7/14 22:00:00</p>
                 <p>拍卖状态: <span>竞拍中 围观291 出价21</span></p>
                 <p>最高价:<span>￥12600</span></p>
-            </a>
+            </router-link>
 
-            <a href="special.html" class="wrap">
-                <img src="../../assets/images/4.jpg" alt="">
+            <router-link to="/special" class="wrap">
+                <img src="@/assets/images/4.jpg" alt="">
                 <div>昌化玻璃白冻 瑞兽钮正章</div>
                 <p>开拍时间: 2016/8/2 19:30:00</p>
                 <p>结束时间: 2016/7/14 22:00:00</p>
                 <p>拍卖状态: <span>竞拍中 围观291 出价21</span></p>
                 <p>最高价:<span>￥12600</span></p>
-            </a>
+            </router-link>
 
-            <a href="special.html" class="wrap">
-                <img src="../../assets/images/4.jpg" alt="">
+            <router-link to="/special" class="wrap">
+                <img src="@/assets/images/4.jpg" alt="">
                 <div>昌化玻璃白冻 瑞兽钮正章</div>
                 <p>开拍时间: 2016/8/2 19:30:00</p>
                 <p>结束时间: 2016/7/14 22:00:00</p>
                 <p>拍卖状态: <span>竞拍中 围观291 出价21</span></p>
                 <p>最高价:<span>￥12600</span></p>
-            </a>
+            </router-link>
 
         </div>
 
@@ -54,64 +54,64 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="" class="wrap">
-                            <img src="../../assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/1.jpg" alt="">
                             <p>日安艺拍下期预告</p>
                             <p>当前价 ￥0</p>
                         </a>
                         <a href="" class="wrap">
-                            <img src="../../assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/1.jpg" alt="">
                             <p>日安艺拍下期预告</p>
                             <p>当前价 ￥0</p>
                         </a>
                         <a href="" class="wrap">
-                            <img src="../../assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/1.jpg" alt="">
                             <p>日安艺拍下期预告</p>
                             <p>当前价 ￥0</p>
                         </a>
                         <a href="" class="wrap">
-                            <img src="../../assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/1.jpg" alt="">
                             <p>日安艺拍下期预告</p>
                             <p>当前价 ￥0</p>
                         </a>
                         <a href="" class="wrap">
-                            <img src="../../assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/1.jpg" alt="">
                             <p>日安艺拍下期预告</p>
                             <p>当前价 ￥0</p>
                         </a>
                         <a href="" class="wrap">
-                            <img src="../../assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/1.jpg" alt="">
                             <p>日安艺拍下期预告</p>
                             <p>当前价 ￥0</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="" class="wrap">
-                            <img src="../../assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/1.jpg" alt="">
                             <p>日安艺拍下期预告</p>
                             <p>当前价 ￥0</p>
                         </a>
                         <a href="" class="wrap">
-                            <img src="../../assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/1.jpg" alt="">
                             <p>日安艺拍下期预告</p>
                             <p>当前价 ￥0</p>
                         </a>
                         <a href="" class="wrap">
-                            <img src="../../assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/1.jpg" alt="">
                             <p>日安艺拍下期预告</p>
                             <p>当前价 ￥0</p>
                         </a>
                         <a href="" class="wrap">
-                            <img src="../../assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/1.jpg" alt="">
                             <p>日安艺拍下期预告</p>
                             <p>当前价 ￥0</p>
                         </a>
                         <a href="" class="wrap">
-                            <img src="../../assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/1.jpg" alt="">
                             <p>日安艺拍下期预告</p>
                             <p>当前价 ￥0</p>
                         </a>
                         <a href="" class="wrap">
-                            <img src="../../assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/1.jpg" alt="">
                             <p>日安艺拍下期预告</p>
                             <p>当前价 ￥0</p>
                         </a>
@@ -144,7 +144,7 @@
     }
 </script>
 
-<style>
+<style scoped>
 
     .bottomwrap {
         height: auto;
@@ -157,10 +157,12 @@
         width: 100%;
         height: 20px;;
         display: inline-block;
+        left: 50%;
     }
 
     .swiper-pagination-bullet {
         margin-left: 5px;
+
     }
 
 </style>
