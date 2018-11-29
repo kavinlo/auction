@@ -31,7 +31,7 @@
                     <div><a href="rule.html"><img src="@/assets/images/p_nav12.png" alt="" class="left"><span>拍卖规则</span><img src="@/assets/images/p_nav02.png" alt="" class="right"></a></div>
                 </li>
                 <li>
-                    <div><a href="no_address.html"><img src="@/assets/images/p_nav13.png" alt="" class="left"><span>收货地址</span><img src="@/assets/images/p_nav02.png" alt="" class="right"></a></div>
+                    <div><a href="/addresses.html"><img src="@/assets/images/p_nav13.png" alt="" class="left"><span>收货地址</span><img src="@/assets/images/p_nav02.png" alt="" class="right"></a></div>
                 </li>
             </ul>
         </div>

@@ -52,7 +52,7 @@
         </ul>
             <!-- 底部 -->
             <div class="add-address">
-                <a href="addAddre.html"><img src="@/assets/images/add_address.png" alt=""><span>添加新地址</span></a>
+                <a href="/addAddre.html"><img src="@/assets/images/add_address.png" alt=""><span>添加新地址</span></a>
             </div>
     </div>
 </template>

@@ -26,7 +26,8 @@ export default new Router({
               {
                   path:'/person',
                   name:'person',
-                  component:()=>import('./index/person.vue')
+                  component:()=>import('./index/person.vue'),
+                  meta:{ Check_Access_Token:true }
               },
               {
                   path:'/activity',
