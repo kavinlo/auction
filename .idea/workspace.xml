@@ -1,54 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86f07fb2-3078-4abc-ad24-35c5daeafd55" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/api/route/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/auction.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/auction.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/api/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/api/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/api/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/application/command.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/application/command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/application/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/application/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/application/index/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/application/provider.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/application/provider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/application/tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/application/tags.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/build.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/build.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/cache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/console.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/cookie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/log.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/log.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/middleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/middleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/trace.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/trace.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/extend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api/extend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/api/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/api/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/public/router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/static/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api/public/static/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/route/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/route/route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/runtime/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api/runtime/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/think" beforeDir="false" afterPath="$PROJECT_DIR$/api/think" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/page/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/page/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/views/addresses/addresses.vue" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/views/addresses/addresses.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/views/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/views/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/views/index/index/person.vue" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/views/index/index/person.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/views/index/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/views/index/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/views/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/views/login/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/views/login/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/views/login/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/views/regist/regist.js" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/views/regist/regist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/src/views/regist/regist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/page/src/views/regist/regist.vue" afterDir="false" />
-    </list>
+    <list default="true" id="86f07fb2-3078-4abc-ad24-35c5daeafd55" name="默认的" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -1599,12 +1552,12 @@
       <workItem from="1543362823101" duration="1000" />
       <workItem from="1543362851504" duration="30060000" />
       <workItem from="1543448436373" duration="57000" />
-      <workItem from="1543448543071" duration="4587000" />
+      <workItem from="1543448543071" duration="4912000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85302000" />
+    <option name="totallyTimeSpent" value="85627000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1617,9 +1570,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15348525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15348525" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1631,7 +1583,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298791" />
       <window_info anchor="bottom" id="运行" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32624114" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32624114" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
