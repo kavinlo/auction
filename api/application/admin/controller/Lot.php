@@ -99,12 +99,17 @@ class Lot extends Controller
             'code_status' => 200,
             'data' => $data
         ];
+
     }
 
     // 新增拍品 属性图片
     public function addAttriImg(Request $req){
 
-        return $req->param();
+        return [
+            'code_status' => 200,
+            'data' => $req -> param('img')
+        ];
+
 
     }
 
