@@ -32,7 +32,7 @@
                         <div class="layui-form-item">
                             <label class="layui-form-label">加价幅度</label>
                             <div class="layui-input-inline">
-                                <input type="number" max="9999" name="range" required lay-verify="required" placeholder="请输入幅度价格" autocomplete="off" class="layui-input">
+                                <input type="number" max="9999" name="range" required lay-verify="required" placeholder="请输入幅度价格" class="layui-input">
                             </div>
                             <div class="layui-form-mid layui-word-aux">只允许输入价格</div>
                         </div>
@@ -49,7 +49,7 @@
                         <div class="layui-form-item">
                             <label class="layui-form-label">拍卖时长</label>
                             <div class="layui-input-block">
-                            <select name="city" lay-verify="required">
+                            <select name="time_length" lay-verify="required">
                                 <option value="5分钟">5分钟</option>
                                 <option value="30分钟">30分钟</option>
                                 <option value="1小时">1小时</option>
@@ -78,8 +78,18 @@
         </div>
     </div>
 </div>
+
 <script type="text/javascript" src="__STATIC__/javascript/jquery.min.js"></script>
 <script type="text/javascript" src="__STATIC__/layui/layui.js"></script>
 <script type="text/javascript" src="__STATIC__/javascript/dw_form_submit.js"></script>
+<script>
+    $('input[name=range]').blur (function(){
+        if( this.value > 9999 ){
+            alert('加价幅度不能超过 9999');
+            return ;
+        }
+    })
+
+</script>
 </body>
 </html>

@@ -12,6 +12,32 @@
         .layui-layer-iframe {
             height: 76%;
         }
+        .pagination {
+            text-align: center;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        .pagination > li {
+            float: left;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            box-sizing: border-box;
+            text-align: center;
+            margin-left: 10px;
+            display: block;
+            border: 1px solid #ccc;
+        }
+        .pagination > li:hover {
+            box-shadow:rgba(34,133,238,.2) 0 0 10px inset;
+            color: red !important;
+        }
+        .pagination > .active {
+            color: black;
+            background: #2285ee;
+            cursor: default;
+        }
     </style>
 
 </head>
@@ -74,7 +100,7 @@
             <fieldset class="layui-elem-field">
                 <legend>拍品管理 - 拍品列表</legend>
                 <div class="layui-field-box">
-                    <form class="layui-form" action="">
+                    <form class="layui-form" >
                         <div class="layui-form-item" style="text-align:center;">
                             <div class="layui-inline">
                                 <div class="layui-input-inline">
@@ -158,6 +184,10 @@
                     </table>
                 </div>
             </fieldset>
+           
+                {$page|raw}
+          
+
         </div>
     </div>
 

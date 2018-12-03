@@ -5,6 +5,7 @@
       <path value="$PROJECT_DIR$/api/vendor/composer" />
       <path value="$PROJECT_DIR$/api/vendor/topthink/think-installer" />
       <path value="$PROJECT_DIR$/api/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/api/vendor/topthink/think-image" />
     </include_path>
   </component>
 </project>

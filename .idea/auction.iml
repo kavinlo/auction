@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/topthink/think-image" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/topthink/think-installer" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />

@@ -5,6 +5,9 @@ namespace app\admin\controller;
 use think\Controller;
 use think\Request;
 use app\admin\model\Lot as LotModel;
+use app\admin\model\LotAttri;
+use app\admin\model\LotAttrRelation;
+use app\admin\model\LotImg;
 
 class Lot extends Controller
 {
@@ -15,8 +18,13 @@ class Lot extends Controller
      */
     public function index()
     {
-        $data = LotModel::all();
-        $this -> assign('lots',$data);
+
+        $list = LotModel::paginate(4);
+        $page = $list->render();    // 分页显示
+
+        $this -> assign('lots',$list);
+        $this -> assign('page',$page);
+
         return $this->fetch('lot');
     }
 
@@ -105,12 +113,49 @@ class Lot extends Controller
     // 新增拍品 属性图片
     public function addAttriImg(Request $req){
 
-        return [
-            'code_status' => 200,
-            'data' => $req -> param('img')
-        ];
+        /* =====================  处理属性 LotAttri ======================*/
+
+        // 获取 拍品id
+        $lot_id = $req->param('lot_id');
+        $lotId = explode('-',$lot_id)[1];
+        // 属性名 和 属性值 数据处理
+        $aName = explode(',',$req->param('aName'));
+        $aValue = explode(',',$req->param('aValue'));
+        // 添加 属性
+        $list = [];   // 拍品ID => 属性ID
+        for( $i=0;$i<count($aName);$i++ ){
+            $attri = LotAttri::create([
+                'lotAttriName' => $aName[$i],
+                'lotAttriValue' => $aValue[$i]
+            ]);
+            $list[] = [
+                'lot_id' => $lotId,
+                'attri_id' => $attri -> id
+            ];
+        }
+
+        /* ================  处理拍品和属性关联表 LotAttrRelation ===============*/
+
+        // 批量添加 拍品和属性
+        $relation = new LotAttrRelation();
+        $relation -> saveAll( $list );
+
+        /* =====================  处理图片 LotImg =====================*/
+
+        $lotImg = new LotImg();
+        $dirList = $lotImg -> handle($_FILES,$lotId);  // 调用封装函数 生成缩略图
+        // 插入数据库
+        $isTrue = $lotImg -> saveAll($dirList);
+
+        // 消息队列 保存到七牛云
 
 
+        if( $isTrue ){
+            return [
+                'code_status' => 200,
+                'mes' => '添加拍品成功'
+            ];
+        }
     }
 
 
