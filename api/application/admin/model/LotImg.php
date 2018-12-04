@@ -2,6 +2,7 @@
 
 namespace app\admin\model;
 
+use app\admin\controller\Redis;
 use think\Model;
 use \think\Image;
 
@@ -20,6 +21,7 @@ class LotImg extends Model
         }
 
         $list = [];
+        // 循环移动图片
         foreach ($img as $k => $v) {
             $imgName = md5(time() . rand(1, 999999));    // 文件名
             $ext = strchr($v['name'], '.');  // 文件后缀名
@@ -33,12 +35,5 @@ class LotImg extends Model
         return $list;
     }
 
-    // 消息队列 保存到七牛云
-    public function RedisQniu($imgUrl){
-
-
-
-
-    }
 
 }

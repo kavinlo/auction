@@ -7,6 +7,7 @@
       <path value="$PROJECT_DIR$/api/vendor/firebase/php-jwt" />
       <path value="$PROJECT_DIR$/api/vendor/topthink/think-image" />
       <path value="$PROJECT_DIR$/api/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/api/vendor/qiniu/php-sdk" />
     </include_path>
   </component>
 </project>

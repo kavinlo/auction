@@ -22,8 +22,8 @@ class Lot extends Controller
         $list = LotModel::paginate(4);
         $page = $list->render();    // 分页显示
 
-        $this -> assign('lots',$list);
-        $this -> assign('page',$page);
+        $this->assign('lots', $list);
+        $this->assign('page', $page);
 
         return $this->fetch('lot');
     }
@@ -41,7 +41,7 @@ class Lot extends Controller
     /**
      * 保存新建的资源
      *
-     * @param  \think\Request  $request
+     * @param  \think\Request $request
      * @return \think\Response
      */
     public function save(Request $request)
@@ -52,7 +52,7 @@ class Lot extends Controller
     /**
      * 显示指定的资源
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \think\Response
      */
     public function read($id)
@@ -63,7 +63,7 @@ class Lot extends Controller
     /**
      * 显示编辑资源表单页.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \think\Response
      */
     public function edit($id)
@@ -74,8 +74,8 @@ class Lot extends Controller
     /**
      * 保存更新的资源
      *
-     * @param  \think\Request  $request
-     * @param  int  $id
+     * @param  \think\Request $request
+     * @param  int $id
      * @return \think\Response
      */
     public function update(Request $request, $id)
@@ -86,22 +86,26 @@ class Lot extends Controller
     // GET 删除 拍品
     public function deleteLot($id)
     {
+
         LotModel::destroy($id);
     }
 
     // 批量删除
-    public function deleteBatch(Request $req){
+    public function deleteBatch(Request $req)
+    {
         $idArr = $req->param('idArr');
         LotModel::destroy($idArr);
     }
 
     // 新增拍品 页面表单展示
-    public function addLot(){
+    public function addLot()
+    {
         return $this->fetch('create');
     }
 
     // 新增拍品 表单提交处理
-    public function doAddLot(Request $req){
+    public function doAddLot(Request $req)
+    {
         $data = LotModel::create($req->param())->hidden(['date']);
         return [
             'code_status' => 200,
@@ -111,26 +115,28 @@ class Lot extends Controller
     }
 
     // 新增拍品 属性图片
-    public function addAttriImg(Request $req){
+    public function addAttriImg(Request $req)
+    {
 
         /* =====================  处理属性 LotAttri ======================*/
 
         // 获取 拍品id
         $lot_id = $req->param('lot_id');
-        $lotId = explode('-',$lot_id)[1];
+        $lotId = explode('-', $lot_id)[1];
+
         // 属性名 和 属性值 数据处理
-        $aName = explode(',',$req->param('aName'));
-        $aValue = explode(',',$req->param('aValue'));
+        $aName = explode(',', $req->param('aName'));
+        $aValue = explode(',', $req->param('aValue'));
         // 添加 属性
         $list = [];   // 拍品ID => 属性ID
-        for( $i=0;$i<count($aName);$i++ ){
+        for ($i = 0; $i < count($aName); $i++) {
             $attri = LotAttri::create([
                 'lotAttriName' => $aName[$i],
                 'lotAttriValue' => $aValue[$i]
             ]);
             $list[] = [
                 'lot_id' => $lotId,
-                'attri_id' => $attri -> id
+                'attri_id' => $attri->id
             ];
         }
 
@@ -138,31 +144,41 @@ class Lot extends Controller
 
         // 批量添加 拍品和属性
         $relation = new LotAttrRelation();
-        $relation -> saveAll( $list );
+        $relation->saveAll($list);
 
         /* =====================  处理图片 LotImg =====================*/
 
         $lotImg = new LotImg();
-        $dirList = $lotImg -> handle($_FILES,$lotId);  // 调用封装函数 生成缩略图
+        $dirList = $lotImg->handle($_FILES, $lotId);  // 调用封装函数 生成缩略图
+
+        // 启动redis lpush 到队列中
+        $redis = new Redis;
         // 插入数据库
-        $isTrue = $lotImg -> saveAll($dirList);
+        foreach ($dirList as $k => $v) {
+            $imgId = LotImg::create([
+                'lot_id' => $v['lot_id'],
+                'img_url' => $v['img_url']
+            ]);
 
-        // 消息队列 保存到七牛云
-
-
-        if( $isTrue ){
-            return [
-                'code_status' => 200,
-                'mes' => '添加拍品成功'
+            // 构造数据
+            $list = [
+                'id' => $imgId->id,
+                'url' => $v['img_url']
             ];
+            // lpush  到队列中
+            $redis->lpushUrl($list);
         }
+        return [
+            'code_status' => 200,
+            'mes' => '添加拍品成功'
+        ];
     }
 
 
     /**
      * 删除指定资源
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \think\Response
      */
     public function delete($id)

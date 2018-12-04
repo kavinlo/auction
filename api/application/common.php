@@ -50,10 +50,3 @@ function jwt()
         'expire' => 7200
     ];
 }
-
-// redis
-function redis(){
-
-
-
-}
