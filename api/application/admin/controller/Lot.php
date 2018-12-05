@@ -18,8 +18,10 @@ class Lot extends Controller
      */
     public function index()
     {
-
-        $list = LotModel::paginate(4);
+        // 关联取数据 分页
+        $list = LotModel::paginate(4)->each(function($value,$key){
+            $value -> lotimgrelation;
+        });
         $page = $list->render();    // 分页显示
 
         $this->assign('lots', $list);
@@ -86,15 +88,19 @@ class Lot extends Controller
     // GET 删除 拍品
     public function deleteLot($id)
     {
-
-        LotModel::destroy($id);
+        // 关联删除 图片 属性 关系表
+        $lot = LotModel::get($id,['lotattri','lotattrirelation','lotimgrelation']);
+        $lot->together(['lotattri','lotattrirelation','lotimgrelation'])->delete();
     }
 
     // 批量删除
     public function deleteBatch(Request $req)
     {
-        $idArr = $req->param('idArr');
-        LotModel::destroy($idArr);
+        foreach($req->param('idArr') as $v){
+            $lot = LotModel::get($v,['lotattri','lotattrirelation','lotimgrelation']);
+            $lot->together(['lotattri','lotattrirelation','lotimgrelation'])->delete();
+        }
+
     }
 
     // 新增拍品 页面表单展示

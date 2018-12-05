@@ -2,34 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f07fb2-3078-4abc-ad24-35c5daeafd55" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/auction.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/auction.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/application/admin/controller/Lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/application/admin/controller/Lot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/application/admin/model/Lot.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/application/admin/model/Lot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/application/admin/model/LotAttrRelation.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/application/admin/model/LotAttrRelation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/application/admin/model/LotImg.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/application/admin/model/LotImg.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/application/command.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/application/command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/application/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/application/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/cache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/0acb922f7888f1546f3d8342344841ab.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/17b75c76f58535764db17c4bf816168a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/1845995dc7afc1dc099d9b5d63addd94.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/1c37433bde2f3ca822a4bf76ad9c0514.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/38a0ce8ee7d32727ce712f489a3c9007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/41653eec6d25d66b04d37d86e5aaff0f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/5cef3c08d61955b2cc422305e2ca78c9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/676281af1b09d95e2e5de00bc7205720.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/6bae5a4bd883dfa2cc79aeae678d4cfc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/8619c3208cb11168c60a22dc49a5c604.jpg!cc_350x449.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/972d757c37168c8c425b5f9344baa889.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/a2ddb6dab2b0c9c80c7ec25d9cdcbf99.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/c8ac702ea104be89efa4a03c7e4b276f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/d3253cd2aa560bcc249327692a48407a.jpg!cc_350x449.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/e003e2536e6bb890da9d82c6546a4035.jpg!cc_350x449.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/public/uploads/2018-12-03/eeace0de0b793bf359e109e09ec1281b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/application/admin/view/lot/lot.html" beforeDir="false" afterPath="$PROJECT_DIR$/api/application/admin/view/lot/lot.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,50 +39,54 @@
     <session id="1381614547">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="3" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
-          <entry key="html" value="19" />
-          <entry key="js" value="8" />
-          <entry key="php" value="50" />
+          <entry key="html" value="20" />
+          <entry key="js" value="10" />
+          <entry key="php" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="19" />
-          <entry key="JavaScript" value="8" />
-          <entry key="PHP" value="50" />
+          <entry key="HTML" value="20" />
+          <entry key="JavaScript" value="10" />
+          <entry key="PHP" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="2413" />
+          <entry key="html" value="2520" />
           <entry key="js" value="3989" />
-          <entry key="php" value="8367" />
+          <entry key="php" value="9109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="2487" />
+          <entry key="HTML" value="2594" />
           <entry key="JavaScript" value="3915" />
-          <entry key="PHP" value="8367" />
+          <entry key="PHP" value="9109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="1" />
+          <entry key="ESLintLanguageService" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -114,7 +96,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/application/admin/controller/Redis.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
+            <state relative-caret-position="605">
               <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
               <folding>
                 <element signature="e#40#61#0#PHP" expanded="true" />
@@ -132,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/application/admin/controller/Lot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
+            <state relative-caret-position="100">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#40#61#0#PHP" expanded="true" />
               </folding>
@@ -144,13 +126,58 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/application/admin/view/lot/lot.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="159" selection-start-line="159" selection-end-line="159" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/application/admin/model/LotAttri.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/application/admin/model/LotAttrRelation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/application/admin/model/Lot.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/application/admin/controller/Manage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="775">
+              <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/application/admin/model/LotImg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="175">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="12" />
               <folding>
-                <element signature="e#35#66#0#PHP" expanded="true" />
+                <element signature="e#35#51#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -237,18 +264,18 @@
         <option value="$PROJECT_DIR$/api/public/static/icheck/minimal/red.css" />
         <option value="$PROJECT_DIR$/api/application/admin/view/lot/lotattri.html" />
         <option value="$PROJECT_DIR$/api/application/admin/model/LotAttri.php" />
-        <option value="$PROJECT_DIR$/api/application/admin/model/LotAttrRelation.php" />
         <option value="$PROJECT_DIR$/api/application/admin/view/lot/create.html" />
-        <option value="$PROJECT_DIR$/api/application/admin/model/Lot.php" />
-        <option value="$PROJECT_DIR$/api/application/admin/view/lot/lot.html" />
         <option value="$PROJECT_DIR$/api/application/common.php" />
         <option value="$PROJECT_DIR$/api/config/cache.php" />
-        <option value="$PROJECT_DIR$/api/application/admin/model/LotImg.php" />
         <option value="$PROJECT_DIR$/api/application/command.php" />
         <option value="$PROJECT_DIR$/api/application/command/RedisStart.php" />
         <option value="$PROJECT_DIR$/api/application/admin/controller/Redis.php" />
         <option value="$PROJECT_DIR$/api/public/static/javascript/dw_form_submit.js" />
+        <option value="$PROJECT_DIR$/api/application/admin/model/LotImg.php" />
+        <option value="$PROJECT_DIR$/api/application/admin/model/LotAttrRelation.php" />
+        <option value="$PROJECT_DIR$/api/application/admin/model/Lot.php" />
         <option value="$PROJECT_DIR$/api/application/admin/controller/Lot.php" />
+        <option value="$PROJECT_DIR$/api/application/admin/view/lot/lot.html" />
       </list>
     </option>
   </component>
@@ -283,8 +310,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="182" />
-    <option name="y" value="261" />
+    <option name="x" value="180" />
+    <option name="y" value="260" />
     <option name="width" value="1310" />
     <option name="height" value="890" />
   </component>
@@ -320,28 +347,28 @@
               <item name="auction" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auction" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auction" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="auction" type="b2602c69:ProjectViewProjectNode" />
               <item name="auction" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auction" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auction" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -416,12 +443,16 @@
       <workItem from="1543681358824" duration="13000" />
       <workItem from="1543795196469" duration="26885000" />
       <workItem from="1543881110250" duration="3006000" />
-      <workItem from="1543904723610" duration="7150000" />
+      <workItem from="1543904723610" duration="7589000" />
+      <workItem from="1543918517793" duration="54000" />
+      <workItem from="1543928283679" duration="1900000" />
+      <workItem from="1543968167768" duration="243000" />
+      <workItem from="1543991163133" duration="6205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167095000" />
+    <option name="totallyTimeSpent" value="175936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -436,7 +467,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16823056" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17828418" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -448,7 +479,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298791" />
       <window_info anchor="bottom" id="运行" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.21985815" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3460993" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -669,21 +700,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/public/static/javascript/dw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="85" column="60" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/application/admin/view/lot/lotattri.html" />
-    <entry file="file://$PROJECT_DIR$/api/application/admin/model/LotAttri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/application/admin/model/Member.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -698,20 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/application/admin/model/LotAttrRelation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/application/admin/controller/Manage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/application/admin/view/lot/create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -719,24 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/application/admin/view/lot/lot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/application/common.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/application/admin/model/Lot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -757,23 +746,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/application/admin/controller/Redis.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
-          <folding>
-            <element signature="e#40#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/application/command/RedisStart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-          <folding>
-            <element signature="e#31#57#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="550">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -784,33 +760,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/public/static/javascript/dw_form_submit.js">
+    <entry file="file://$PROJECT_DIR$/api/application/admin/controller/Manage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2483">
-          <caret line="133" column="21" lean-forward="true" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+        <state relative-caret-position="775">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/application/admin/controller/Redis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#40#61#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/application/admin/model/LotImg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="175">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="12" />
           <folding>
-            <element signature="e#35#66#0#PHP" expanded="true" />
+            <element signature="e#35#51#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/application/admin/model/LotAttri.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/application/admin/model/LotAttrRelation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/public/static/javascript/dw_form_submit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-331">
+          <caret line="133" column="21" lean-forward="true" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/public/static/javascript/dw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="96" column="51" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/application/admin/model/Lot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/application/admin/controller/Lot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
+        <state relative-caret-position="100">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#40#61#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/application/admin/view/lot/lot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
         </state>
       </provider>
     </entry>

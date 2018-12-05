@@ -142,6 +142,7 @@
                         <tr>
                             <th class="selectAll"><input type="checkbox"></th>
                             <th>拍品名</th>
+                            <th>图片展示</th>
                             <th>拍品底价</th>
                             <th>拍品加价幅度</th>
                             <th>开拍时间</th>
@@ -158,6 +159,7 @@
                         <tr>
                             <td ><input type="checkbox" name="id" value="{$list.id} "></td>
                             <td>{$list.lot_name}</td>
+                            <td><img src="{$list.lotimgrelation[0]['img_url']}" alt=""></td>
                             <td>{$list.lot_floorPrice}</td>
                             <td>{$list.range}</td>
                             <td>{$list.time}</td>

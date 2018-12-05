@@ -2,7 +2,6 @@
 
 namespace app\admin\model;
 
-use app\admin\controller\Redis;
 use think\Model;
 use \think\Image;
 
