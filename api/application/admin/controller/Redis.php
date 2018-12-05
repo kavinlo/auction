@@ -10,6 +10,8 @@ use Qiniu\Auth;
 class Redis extends Controller
 
 {
+    protected $middleware = ['Islogin'];
+
     public static $redis = null;
     public $accessKey = 'oiEH9VSyM7t6Sa8Mj5T6u8t228ih4u04ChFgp2OQ';
     public $secretKey = 'ONljn0iSjFws4bWpHFNYtXEfXXltAdXFh6k8o5b0';

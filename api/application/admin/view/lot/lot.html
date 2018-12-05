@@ -12,12 +12,14 @@
         .layui-layer-iframe {
             height: 76%;
         }
+
         .pagination {
             text-align: center;
             margin: 0 auto;
             display: flex;
             justify-content: center;
         }
+
         .pagination > li {
             float: left;
             width: 30px;
@@ -29,10 +31,12 @@
             display: block;
             border: 1px solid #ccc;
         }
+
         .pagination > li:hover {
-            box-shadow:rgba(34,133,238,.2) 0 0 10px inset;
+            box-shadow: rgba(34, 133, 238, .2) 0 0 10px inset;
             color: red !important;
         }
+
         .pagination > .active {
             color: black;
             background: #2285ee;
@@ -82,12 +86,12 @@
                     </dl>
                 </li>
                 <!--<li class="layui-nav-item">-->
-                    <!--<a href="javascript:;">权限管理</a>-->
-                    <!--<dl class="layui-nav-child">-->
-                        <!--<dd><a href="rule.html">规则列表</a></dd>-->
-                        <!--<dd><a href="role.html">角色列表</a></dd>-->
-                        <!--<dd><a href="adminRole.html">用户角色</a></dd>-->
-                    <!--</dl>-->
+                <!--<a href="javascript:;">权限管理</a>-->
+                <!--<dl class="layui-nav-child">-->
+                <!--<dd><a href="rule.html">规则列表</a></dd>-->
+                <!--<dd><a href="role.html">角色列表</a></dd>-->
+                <!--<dd><a href="adminRole.html">用户角色</a></dd>-->
+                <!--</dl>-->
                 <!--</li>-->
 
             </ul>
@@ -100,17 +104,17 @@
             <fieldset class="layui-elem-field">
                 <legend>拍品管理 - 拍品列表</legend>
                 <div class="layui-field-box">
-                    <form class="layui-form" >
+                    <form class="layui-form" method="post" action="/admin/lot/lotSearch" id="search_form">
                         <div class="layui-form-item" style="text-align:center;">
                             <div class="layui-inline">
                                 <div class="layui-input-inline">
-                                    <input autocomplete="off" class="layui-input" placeholder="请输入名称" type="text"
-                                           name="name" value="">
+                                    <input class="layui-input" placeholder="请输入名称" type="text"
+                                           name="lot_name" value="">
                                 </div>
                             </div>
                             <div class="layui-inline" style="text-align:left;">
                                 <div class="layui-input-inline">
-                                    <button class="layui-btn"><i class="layui-icon">&#xe615;</i>查询</button>
+                                    <span class="layui-btn submit"><i class="layui-icon">&#xe615;</i>查询</span>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +125,8 @@
                                 dw-title="新增拍品" dw-width="100%" dw-height=icheckbox_minimal-red"100%">
                             <i class="layui-icon">&#xe654;</i>新增
                         </button>
-                        <button class="layui-btn layui-btn-xs layui-btn-danger dw-batch-delete" data-way="lot" dw-url="">
+                        <button class="layui-btn layui-btn-xs layui-btn-danger dw-batch-delete" data-way="lot"
+                                dw-url="">
                             <i class="layui-icon">&#xe640;</i>删除
                         </button>
                         <button class="layui-btn layui-btn-xs dw-refresh">
@@ -157,7 +162,7 @@
                         {volist name="lots" id="list"}
 
                         <tr>
-                            <td ><input type="checkbox" name="id" value="{$list.id} "></td>
+                            <td><input type="checkbox" name="id" value="{$list.id} "></td>
                             <td>{$list.lot_name}</td>
                             <td><img src="{$list.lotimgrelation[0]['img_url']}" alt=""></td>
                             <td>{$list.lot_floorPrice}</td>
@@ -169,7 +174,7 @@
                             <td class="text-center">
                                 <div class="layui-btn-group">
                                     <button class="layui-btn layui-btn-xs layui-btn-normal dw-dailog"
-                                            dw-url="create.html?id=1" dw-title="编辑用户">
+                                            dw-url="http://localhost:9999/admin/lot/edit/id/188" dw-title="编辑用户">
                                         <i class="layui-icon">&#xe642;</i>编辑
                                     </button>
                                     <button class="layui-btn layui-btn-xs layui-btn-danger dw-delete"
@@ -186,9 +191,9 @@
                     </table>
                 </div>
             </fieldset>
-           
-                {$page|raw}
-          
+
+            {$page|raw}
+
 
         </div>
     </div>
@@ -198,15 +203,21 @@
         © layui.com - 底部固定区域
     </div>
 </div>
-<script>
 
-
-
-</script>
 <script type="text/javascript" src="__STATIC__/javascript/jquery.min.js"></script>
 <script type="text/javascript" src="__STATIC__/layui/layui.js"></script>
 <script type="text/javascript" src="__STATIC__/icheck/icheck.js"></script>
 <script type="text/javascript" src="__STATIC__/javascript/dw.js"></script>
+<script>
+    // js 提交搜索表单
+    $(".submit").click(function () {
 
+        var form = document.querySelector('#search_form')
+        console.log(form)
+        form.submit()
+
+    })
+
+</script>
 </body>
 </html>

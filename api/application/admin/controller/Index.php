@@ -7,6 +7,8 @@ use think\Request;
 
 class Index extends Controller
 {
+    protected $middleware = ['Islogin'];
+
     /**
      * 显示资源列表
      *

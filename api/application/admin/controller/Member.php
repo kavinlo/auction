@@ -7,6 +7,8 @@ use think\Request;
 use app\admin\model\Member as MemberModel;
 class Member extends Controller
 {
+    protected $middleware = ['Islogin'];
+
     /**
      * 显示资源列表
      *

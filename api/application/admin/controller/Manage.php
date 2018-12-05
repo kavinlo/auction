@@ -5,6 +5,7 @@ namespace app\admin\controller;
 use think\Controller;
 use think\Request;
 use app\admin\model\Manage as ManageModel;
+use think\facade\Session;
 
 class Manage extends Controller
 {
@@ -24,7 +25,10 @@ class Manage extends Controller
     {
         $data = ManageModel::where('mName', $req->param('mName'))->where('mPassword', md5($req->param('mPassword')))->find();
         if ($data) {
-            // 登录 成功重定向到首页
+            // 登录 成功重定向到首页 保存session
+            Session::set('mName',$data->mName);
+            Session::set('mId',$data->id);
+
             return $this->success('登陆成功', '/admin/index');
         }
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>闲心拍卖 后台管理系统</title>
+  <link rel="stylesheet" href="__STATIC__/layui/css/layui.css">
+    <style>
+        .layui-input-block .cha {
+            display: inline-block;
+            width: 5px;
+            height: 15px;
+            background-color: red;
+            position: absolute;
+            /*transition: all 0.1s;*/
+        }
+        .layui-input-block .cha:first-child {
+            transform:rotate(100deg);
+        }
+        .icha {
+            position: absolute;
+            right: 50px;
+            top: -5px;
+        }
+        .layui-input-block .icha:hover {
+            transform:rotate(80deg);
+            transition: all 1s;
+        }
+
+
+        .layui-input-block li {
+            position: relative;
+            width: 250px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<div class="layui-container">  
+    <div class="layui-row">
+        <div class="layui-col-lg12">
+            <fieldset class="layui-elem-field">
+                <span class="bigTitle">
+                    <legend>拍品管理 - 编辑拍品</legend>
+                </span>
+                <div class="layui-field-box">
+                    <form class="layui-form" action="/admin/lot/update/id/{$lot.id}" method="post">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">拍品名</label>
+                            <div class="layui-input-block">
+                            <input type="text" name="lot_name" required  lay-verify="required" placeholder="请输入标题" value="{$lot.lot_name}" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">拍品底价</label>
+                            <div class="layui-input-inline">
+                            <input type="number" name="lot_floorPrice" value="{$lot.lot_floorPrice}" required lay-verify="required" placeholder="请输入价格" autocomplete="off" class="layui-input">
+                            </div>
+                            <div class="layui-form-mid layui-word-aux">只允许输入价格</div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">加价幅度</label>
+                            <div class="layui-input-inline">
+                                <input type="number" max="9999" name="range" value="{$lot.range}" required lay-verify="required" placeholder="请输入幅度价格" class="layui-input">
+                            </div>
+                            <div class="layui-form-mid layui-word-aux">只允许输入价格</div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">拍品图展示</label>
+                            <div class="layui-input-block">
+                                <ul>
+                                        {volist name="$lot.lotimgrelation" id="url"}
+                                        <li>
+
+                                            <i class="icha">
+                                                <span class="cha"></span>
+                                                <span class="cha"></span>
+                                            </i>
+                                            <img style="width: 200px;" src="{$url.img_url}" alt="">
+                                        </li>
+                                    {/volist}
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">拍品描述</label>
+                            <div class="layui-input-block">
+                            <textarea name="lot_description" placeholder="请输入内容" class="layui-textarea">
+                                {$lot.lot_description}
+                            </textarea>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                            <button class="layui-btn" type="submit" >立即提交</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="__STATIC__/javascript/jquery.min.js"></script>
+<script type="text/javascript" src="__STATIC__/layui/layui.js"></script>
+<script type="text/javascript" src="__STATIC__/javascript/dw_form_submit.js"></script>
+<script>
+
+    // icha 点击删除图片元素
+    $(".icha").click(function(){
+        var parentDom = this.parentNode
+        parentDom.parentNode.removeChild(parentDom)
+
+    })
+
+    // 加价幅度 验证
+    $('input[name=range]').blur (function(){
+        if( this.value > 9999 ){
+            alert('加价幅度不能超过 9999');
+            return ;
+        }
+    })
+</script>
+</body>
+</html>

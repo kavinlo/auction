@@ -11,6 +11,7 @@ use app\admin\model\LotImg;
 
 class Lot extends Controller
 {
+    protected $middleware = ['Islogin'];
     /**
      * 显示资源列表
      *
@@ -70,7 +71,11 @@ class Lot extends Controller
      */
     public function edit($id)
     {
-        //
+        $lot = LotModel::get($id);
+        $lot -> lotattri;
+        $lot -> lotimgrelation;
+        $this -> assign('lot',$lot);
+        return $this->fetch('editor');
     }
 
     /**
@@ -82,7 +87,14 @@ class Lot extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $lotModel = new LotModel();
+        $isTrue = $lotModel -> save([
+            'lot_name'=>$request->param('lot_name'),'lot_description'=>$request->param('lot_description'),
+            'lot_floorPrice'=>$request->param('lot_floorPrice'),'range'=>$request->param('range')
+            ],['id'=>$id]);
+        if( $isTrue ){
+            $this->redirect('/admin/lot/');
+        }
     }
 
     // GET 删除 拍品
@@ -179,6 +191,26 @@ class Lot extends Controller
             'mes' => '添加拍品成功'
         ];
     }
+
+    // 搜索 根据文本
+    public function lotSearch(Request $req){
+
+        // 关联取数据 分页
+        $list = LotModel::where('lot_name',$req->param('lot_name'))->paginate(4)->each(function($value,$key){
+            $value -> lotimgrelation;
+        });
+        $page = $list->render();    // 分页显示
+
+        $this->assign('lots', $list);
+        $this->assign('page', $page);
+
+        return $this->fetch('lot');
+
+
+    }
+
+
+
 
 
     /**
