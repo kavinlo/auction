@@ -1,0 +1,44 @@
+version: "3"
+services: 
+  redis: 
+    image: redis:5-alpine
+    expose:
+      - "6379"
+  mysql:
+    image: mysql:5.7.24
+    ports:
+      - "13306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=123123
+  php:
+    image: php:7.2.12-fpm-alpine
+    expose:
+      - "9000"
+    volumes:
+      - "/home/kavin/Desktop/data/auction/aucApi/:/var/www/html"
+    links:
+      - mysql
+  es:
+    image: elasticsearch:6.5.2
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+  ki:
+    image: kibana:6.5.2
+    ports:
+      - "5601:5601"
+    depends_on:
+      - es
+    links:
+      - es
+  nginx:
+    image: nginx:1.15.7-alpine
+    ports:
+      - "1080:80"
+    volumes:
+      - "/home/kavin/Desktop/data/auction/aucApi/:/usr/share/nginx/html"
+    links:
+      - redis
+      - php
+      - es
+      

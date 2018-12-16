@@ -1,29 +1,29 @@
-﻿/* 
-* numkeyboard 1.0 
-* Copyright (c) 2014 BowenLuo http://www.luobo.com/ 
+﻿/*
+* numkeyboard 1.0
+* Copyright (c) 2014 BowenLuo http://www.luobo.com/
 * Date: 2014-06-08
 *	Example:$(".numkeyboard").numkeyboard();
 
-*/ 
+*/
 
-(function($){ 
-$.fn.numkeyboard = function(options){ 
-var defaults = { 
+(function($){
+$.fn.numkeyboard = function(options){
+var defaults = {
 
-} 
-var options = $.extend(defaults, options); 
+}
+var options = $.extend(defaults, options);
 var keyboardRadix = options.keyboardRadix;
 if(keyboardRadix<300){
 	keyboardRadix=300;
 }
 var numkeyboardcount = 0;
 var activeinputele;
-this.each(function(){ 	
+this.each(function(){
 	numkeyboardcount++;
 	//添加唯一的数字键盘
-	
+
 	//元素选择器
-	
+
 	var inputele = $(this);
 	var keyboard = $('#auth_keybord7724');
 	var keyboard_exit = keyboard.children('div:first');
@@ -35,35 +35,35 @@ this.each(function(){
 
 	keyboard_exit.click(function(){   //点击关闭按钮
 		exit(options.clickeve);
-		
-	});	
+
+	});
 	$('#btn').click(function(){
 		if(keyboard.css("display")=="none"){
 			keyboard.css({"display":"block"});
-			
+
 		}
 	})
 
-	inputele.focus(function(event){     
+	inputele.focus(function(event){
 		activeinputele = $(this);
 		var p = GetScreenPosition(this);
 	});
-		
+
 	if(options.clickeve){
-		inputele.click(function(){	
+		inputele.click(function(){
 		activeinputele = $(this);
 		var p = GetScreenPosition(this);
 		if(keyboard.css("display")=="none"){
 			keyboard.css({"display":"block"});
-			
+
 		}});
-	}	
-	
+	}
+
 	if(numkeyboardcount<2){
 		for(var i=0;i<keyboard_button.length;i++){
 			numbuttonclick(i);
 		}
-	}		
+	}
 	function randomOnlyId(){
 		var tempRandom = String(Date.now());
 		var tempRandomLength = tempRandom.length;
@@ -75,15 +75,15 @@ this.each(function(){
 			return randomId;
 		}
 	}
-	
+
 	function getElem(id) {
       return document.getElementById(id);
     }
-	
+
 	function numbuttonclick(buttonnum){
 		keyboard_buttonli.children('button:eq('+buttonnum+')').click(function(e){
-			
-			var buttontext = keyboard_buttonli.children('button:eq('+buttonnum+')').text();				
+
+			var buttontext = keyboard_buttonli.children('button:eq('+buttonnum+')').text();
 			if(buttontext/1){
 				clickkey(buttontext/1);
 			}else{
@@ -96,10 +96,10 @@ this.each(function(){
 				if(buttontext=="清除"){
 					keyclear();
 				}
-			}				
+			}
 		})
 	}
-	
+
 	function keyclear(){				//清除
 		 activeinputele.val("");
 	}
@@ -108,20 +108,20 @@ this.each(function(){
 		if(inputtext.length>0){
 			inputtext = inputtext.substring(0,inputtext.length-1);
 			activeinputele.val(inputtext);
-		}	
-	}	
-	function clickkey(num){				 	//	提示文字	
+		}
+	}
+	function clickkey(num){				 	//	提示文字
 		var inputtext = activeinputele.val();
-		inputtext = inputtext+num;		
+		inputtext = inputtext+num;
 		 activeinputele.val(inputtext);
-	}	
-	
-	function exit(){		
+	}
+
+	function exit(){
 		keyboard.css({"display":"none"});
 	}
-	
+
 	function GetScreenPosition(object) {
-		var position = {};			
+		var position = {};
 		position.x = object.offsetLeft;
 		position.y = object.offsetTop;
 		while (object.offsetParent) {
@@ -136,13 +136,14 @@ this.each(function(){
 		}
 		return position;
 	}
-	
 
-	
+
+
 
 
         function getT3d(elem, ename) {
-            var elem = elem[0];
+            // var elem = elem[0];
+            elem = elem[0];
             var str1 = elem.style.webkitTransform;
             if (str1 == "") return "0";
             str1 = str1.replace("translate3d(", "");
@@ -154,7 +155,8 @@ this.each(function(){
             else if (ename == "z") return carr[2];
             else return "";
         }
-    
-}); 
-}; 
-})(jQuery); 
+
+});
+};
+})
+// (jQuery);

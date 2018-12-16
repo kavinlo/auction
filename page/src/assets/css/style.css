@@ -19,7 +19,6 @@
  *          ======`-.____`-.___\_____/___.-`____.-'======
  *                             `=---='
  *          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-			/*						佛祖				 */
 /* CSS Reset*/
 html {
 	font-size:125%;
@@ -170,7 +169,7 @@ body{
 }
 
 .icon {
-  font-family:"../fonts/iconfont" !important;
+  font-family:"iconfont" !important;
   
   font-style:normal;
   -webkit-font-smoothing: antialiased;
@@ -700,7 +699,7 @@ vertical-align: middle;
 	padding-left: 0.4rem;
 }
 
-.person .mid{  
+.person .mid{
 	width: 100%;
 	background: #fff;
 }
@@ -761,7 +760,7 @@ vertical-align: middle;
 	margin: 0 auto;
 	overflow: hidden;
 
-	
+
 }
 .person .list img{
 	width: 0.75rem;
@@ -889,7 +888,9 @@ vertical-align: middle;
 /* **********************************************************************************************
                                               添加地址
 ************************************************************************************************* */
-
+.add_address{
+	background: #fff;
+}
 .add_address .wrap1,.add_address .wrap2{
 	width: 90%;
 	margin: 0 auto;
@@ -901,14 +902,12 @@ vertical-align: middle;
 	font-family: '微软雅黑';
 	font-size: 0.7rem;
 	border-radius: 0;
-	height: 40px;
-	padding: 10px 15px;
 }
 .add_address .mui-input-row input{
-	font-size: 0.8rem;
+	width: 75%;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
-	height: 40px;
-	width: 20%;
+
+	
 }
 .add_address .mui-input-row label{
 	font-size: 0.8rem;
@@ -938,31 +937,7 @@ vertical-align: middle;
 	background: #6f6666;
 	border-color: rgba(0,0,0,0.1);
 }
-/* **********************************************************************************************
-                                              拍卖规则
-************************************************************************************************* */
-.rule{
-	line-height: 1rem;
-}
-.rule h1{
-	text-align: center;
-	font-size: 0.75rem;
-}
-.rule span{
-	color: #e7a71e;
-}
-.rule .indent{
-	text-indent: 2rem;
-}
-.rule .wrap{
-	width: 90%;
-	margin: 0.3rem auto;
-}
-.rule .footer div{
-	 width: 90%;
-	 border:1px dotted #ed7032;
-	 margin: 1rem auto 0.5rem;
-}
+
 /* **********************************************************************************************
                                               发表评价
 ************************************************************************************************* */
@@ -1359,7 +1334,7 @@ vertical-align: middle;
 	border-left: 1px solid rgba(0,0,0,0.1);
 	border-right: 1px solid rgba(0,0,0,0.1);
 	background: none;
-	/* background: url(../assets/images/history.png) no-repeat top center; */
+	background: url(../images/history.png) no-repeat top center;
 	background-size: 0.255rem 0.225rem;
 }
 .special .mui-table-view-cell img{
@@ -1458,7 +1433,6 @@ vertical-align: middle;
 	display: none;
 	 overflow: hidden; 
 	 width: 100%; 
-	 height: 17.5rem; 
 	bottom: 2.5rem;
 	left: 0;
 	right: 0;
