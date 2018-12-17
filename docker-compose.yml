@@ -1,6 +1,6 @@
 version: "3"
-services: 
-  redis: 
+services:
+  redis:
     image: redis:5-alpine
     expose:
       - "6379"
@@ -15,7 +15,7 @@ services:
     expose:
       - "9000"
     volumes:
-      - "/home/kavin/Desktop/data/auction/aucApi/:/var/www/html"
+      - "/media/kavin/新加卷1/deepin/project/auction/aucApi/:/var/www/html"
     links:
       - mysql
   es:
@@ -36,9 +36,9 @@ services:
     ports:
       - "1080:80"
     volumes:
-      - "/home/kavin/Desktop/data/auction/aucApi/:/usr/share/nginx/html"
+      - "/media/kavin/新加卷1/deepin/project/auction/aucApi/:/usr/share/nginx/html"
     links:
       - redis
       - php
       - es
-      
+
