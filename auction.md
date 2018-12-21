@@ -14,30 +14,29 @@
   2. mPassword（管理员密码）
   3. phoneTel（管理员电话）
   4. mEmail（管理员邮箱）
-  5. mType（管理员类型）
 
 ## 拍品模块
 
 
 
-+ auc_lot -- 拍品表
++ auc_lots -- 拍品表
   1. lotPrice（底价）
   2. rang（最低加价幅度）
   3. time（竞拍时间  2018.11.12 15:30）
   4. timeLength（竞拍时长 1天、2小时、5分钟...）
   5. lDescription（拍品描述）
   6. created_at（拍品添加时间）
-+ auc_img -- 拍品图片表
++ auc_imgs -- 拍品图片表
   1. lot_id（拍品id）
   2. lotImgUrl（拍品图片地址）
-+ auc_attri -- 拍品属性
++ auc_attris -- 拍品属性
   1. attriName（拍品属性名）
   2. attriVal（拍品属性值）
   3. lot_id（拍品ID）
 
 ## 收藏模块
 
-+ auc_collect -- 收藏表
++ auc_collects -- 收藏表
   1. user_id（用户id）
   2. lot_id（拍品id）
   3. created_at（收藏时间）
@@ -54,12 +53,12 @@
 
 ## 评论模块
 
-+ auc_lotComment -- 拍品聊天记录表
++ auc_lotComments -- 拍品聊天记录表
   1. lot_id（拍品ID）
   2. user_id（用户id）
   3. content（聊天内容）
   4. created_at（时间）
-+ auc_orderComment -- 订单评论表
++ auc_orderComments -- 订单评论表
   1. order_id（订单id）
   2. user_id（用户id）
   3. content（评论内容）
@@ -79,7 +78,7 @@
 
 ## 日志模块
 
-+ auc_log -- 日志表
++ auc_logs -- 日志表
   1. id（用户/管理员id）
   2. info（信息）
   3. created_at（记录时间）

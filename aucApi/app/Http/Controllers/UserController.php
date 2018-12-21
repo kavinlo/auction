@@ -8,11 +8,31 @@ use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
-    //
-    public function test()
+    // 会员 列表
+    public function memberList()
     {
+        $memberData = User::paginate(4);
+        return view('admin.memberList',[
+            'memberData'=>$memberData
+        ]);
+    }
 
-        $a = User::create(['uName'=>'aaaa','uPassword'=>'444']);
-        dd($a);
+    // 会员 点击单个删除
+    public function memberDeleteByOne($id)
+    {
+        $memeber = User::find($id);
+        $memeber -> delete();
+    }
+
+    // 会员 点击删除所有
+    public function memberDeleteByAll(Request $req)
+    {
+        $deleteCount = User::whereIn('id',$req->checkId)->delete();
+        if( $deleteCount == count($req->checkId) ){
+            return json_encode([
+                'code'=>200,
+                'message'=>'删除成功'
+            ]);
+        }
     }
 }

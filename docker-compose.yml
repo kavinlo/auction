@@ -10,14 +10,14 @@ services:
       - "13306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=123123
+    volumes:
+      - "/media/kavin/新加卷1/deepin/project/auction/data/:/var/lib/mysql"
   php:
     image: php:7.2.12-fpm-alpine
     expose:
       - "9000"
     volumes:
       - "/media/kavin/新加卷1/deepin/project/auction/aucApi/:/var/www/html"
-    links:
-      - mysql
   es:
     image: elasticsearch:6.5.2
     ports:
@@ -38,7 +38,9 @@ services:
     volumes:
       - "/media/kavin/新加卷1/deepin/project/auction/aucApi/:/usr/share/nginx/html"
     links:
-      - redis
-      - php
-      - es
+      - php:php
+      - es:es
+      - mysql:mysql
+      - redis:redis
+
 
